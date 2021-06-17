@@ -20,14 +20,12 @@
                                 </div>	
                             </form>	
                             <!-- Hero Pera -->
-                            <div class="hero-pera">
-                                <p>For order status inquiry</p>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="overlay">My Name is John</div>
+           
         </div>
     </div>
 

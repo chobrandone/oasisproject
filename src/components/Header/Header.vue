@@ -40,13 +40,13 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav> 
                                         <ul id="navigation">                                                                                          
-                                            <li><a href="#home-section">Home</a></li>
-                                            <li><a href="#about-section">About</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="blog.html">Blog</a>
+                                            <li><a href="#"  > Home </a> </li>
+                                           <li><a href="#"> <router-link  to="/blog">About</router-link> </a> </li>
+                                            <li><a href="">Services</a></li>
+                                            <li><a  @click="blog"> Blog</a>
                                                
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a @click="contact">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -64,6 +64,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
     <!-- Header End -->
 </header>
@@ -77,9 +78,14 @@ export default {
         }
     },
      methods: {
-    aboutus: function () {
+    blog: function () {
       this.$router.push({
-        path: "/aboutus",
+        path: "/blog",
+      });
+    },
+     contact: function () {
+      this.$router.push({
+        path: "/contact",
       });
     },
   },

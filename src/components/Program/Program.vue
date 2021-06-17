@@ -1,7 +1,7 @@
 <template >
    <div class="our-info-area pt-70 pb-40">
         <div class="container ">
-            <div class="row ">
+            <div class="row main ">
                 <div class="col-lg-4 col-md-6 col-sm-6 pb-40 ">
                     <div class="single-info mb-30">
                         <div class="info-icon">
@@ -50,11 +50,8 @@ export default {
 }
 </script>
 <style scoped>
-.container{
-    margin-top: 20px;
-   
-}
-.row{
+
+.main{
    padding-top: 60px;
 }
 .our-info-area {

@@ -1,8 +1,8 @@
 <template>
    <!--? About Area Start -->
-    <div class="about-low-area padding-bottom mt-5 mb-5">
+    <div class="about-low-area padding-bottom mt-5 mb-5 main-about">
         <div class="container">
-            <div class="row">
+            <div class="row about-row">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
@@ -40,8 +40,11 @@ export default {
 }
 </script>
 <style scoped >
-.row{
+.about-row {
     margin-bottom: 100px;
+    }
+    .main-about{
+        margin-top: 100px;
     }
 .latest_blog_area {
     background: #f9f9ff
@@ -239,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
         position: unset;
          display: none;
     }
-    .row{
+    .about-row{
     margin-bottom: 50px;
     }
 }

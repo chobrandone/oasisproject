@@ -1,4 +1,5 @@
 <template>
+<!-- services start here-->
      <div class="categories-area section-padding30">
         <div class="container">
             <div class="row">
@@ -47,6 +48,7 @@
             </div>
         </div>
     </div>
+    <!-- services end here-->
 </template>
 <script>
 export default {
