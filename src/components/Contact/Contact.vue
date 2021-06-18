@@ -108,10 +108,7 @@ export default {
     text-transform: uppercase;
     cursor: pointer;
 }
-.boxed-btn:hover{
-    background:  #f15f22;
-    color: #fff !important;
-}
+
 .contact-info {
     margin-bottom: 25px
 }

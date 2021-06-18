@@ -40,9 +40,9 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav> 
                                         <ul id="navigation">                                                                                          
-                                            <li><a href="#"  > Home </a> </li>
-                                           <li><a href="#"> <router-link  to="/blog">About</router-link> </a> </li>
-                                            <li><a href="">Services</a></li>
+                                            <li><a @click="Home"  > Home </a> </li>
+                                           <li><a> About </a> </li>
+                                            <li><a>Services</a></li>
                                             <li><a  @click="blog"> Blog</a>
                                                
                                             </li>
@@ -52,7 +52,7 @@
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20 text-left">
-                                    <a href="contact.html" class="btn header-btn">Get A Qoue</a>
+                                    <a href="contact.html" class="btn header-btn">Get The App</a>
                                 </div>
                             </div>
                         </div> 
@@ -88,11 +88,17 @@ export default {
         path: "/contact",
       });
     },
+    Home: function () {
+      this.$router.push({
+        path: "/",
+      });
+    },
+    
   },
     
 }
 </script>
-<style >
+<style scoped >
 .oasislogo img{
     height: 100px;
 }
@@ -176,7 +182,8 @@ export default {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-area .header-bottom {
-        padding: 15px 0px
+        
+        height: 50px;
     }
 }
 
@@ -193,7 +200,7 @@ export default {
 }
 
 .header-area {
-    background: #000c20
+    background: #000c20;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -262,13 +269,23 @@ export default {
 .main-header .main-menu ul li {
     display: inline-block;
     position: relative;
-    z-index: 1
+    z-index: 1;
+    list-style-type: none;
+
+}
+.main-header .main-menu ul li:hover{
+    background:#f15f22 ;
+    width: inherit;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 20px;
+
 }
 
 .main-header .main-menu ul li a {
     color: #fff;
-    font-weight: 400;
-    padding: 39px 19px;
+    font-weight: 200;
+    /* padding: 39px 19px; */
     display: block;
     font-size: 16px;
     -webkit-transition: all .3s ease-out 0s;
@@ -276,12 +293,14 @@ export default {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    text-transform: capitalize
+    text-transform: capitalize;
+     list-style-type: none;
+     padding: 5px 15px !important;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .main-header .main-menu ul li a {
-        padding: 39px 14px
+        /* padding: 39px 14px */
     }
 }
 
@@ -325,7 +344,7 @@ export default {
 }
 
 .header-sticky.sticky-bar.sticky .main-menu ul li a {
-    padding: 20px 20px !important
+    /* padding: 20px 20px !important */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

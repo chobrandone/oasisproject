@@ -3,7 +3,8 @@ import App from './App.vue'
 // import router from './router' 
 import VueRouter from 'vue-router'
 import Routes from "../src/router/index"
-
+import 'bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/css/bootstrap.min.css"
 // import "./assets/css/owl.carousel.min.css"
 

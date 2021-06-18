@@ -43,10 +43,10 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav> 
                                         <ul id="navigation">                                                                                          
-                                            <li><a href="#"  > Home </a> </li>
-                                           <li><a href="#"> <router-link  to="/blog">About</router-link> </a> </li>
-                                            <li><a href="">Services</a></li>
-                                            <li><a  @click="blog"> Blog</a>
+                                            <li><a  id="home"> Home </a> </li>
+                                           <li><a id="about">About </a> </li>
+                                            <li><a id="service">Services</a></li>
+                                            <li><a id="blog" @click="blog"> Blog</a>
                                                
                                             </li>
                                             <li><a @click="contact">Contact</a></li>
@@ -55,7 +55,7 @@
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20 text-left">
-                                    <a href="contact.html" class="btn header-btn">Get A Qoue</a>
+                                    <a href="contact.html" class="btn header-btn">Get Oasis App</a>
                                 </div>
                             </div>
                         </div> 
@@ -85,10 +85,10 @@
                             <!--Hero form -->
                             <form action="#" class="search-box">
                                 <div class="input-form">
-                                    <input type="text" placeholder="Your Tracking ID">
+                                    <input type="text" placeholder="Enter your email">
                                 </div>
                                 <div class="search-form">
-                                    <a href="#">Track & Trace</a>
+                                    <a href="#">Subscribe</a>
                                 </div>	
                             </form>	
                             <!-- Hero Pera -->
@@ -142,7 +142,7 @@
         </div>
     </div>
     </section>
-    <section>
+    <section id="service">
         <!-- services start here-->
      <div class="categories-area section-padding30">
         <div class="container">
@@ -191,11 +191,12 @@
                 </div>
             </div>
         </div>
+        <div class="mt-3"> <a @click="service" class="btn text-light">See all services</a></div>
     </div>
     <!-- services end here-->
     </section>
 
-    <section>
+    <section id="about">
          <!--? About Area Start -->
     <div class="about-low-area padding-bottom mt-5 mb-5 main-about">
         <div class="container">
@@ -209,7 +210,8 @@
                         </div>
                         <p class="text-left">Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
                         <p class="text-left">Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
-                        <a href="about.html" class="btn">More About Us</a>
+                        <div class="text-left"><a @click="about" class="btn text-light ">More About Us</a></div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -227,7 +229,7 @@
     <!-- About Area End -->
     </section>
          <!--? contact-form start -->
-<section>
+<section id="contact">
 
       <!--? contact-form start -->
    <div class=" contact-form">
@@ -263,9 +265,8 @@
          
 </div>
     <!-- contact-form end -->
-</section>
-    <!-- our team start  -->
-       <div class="team-area section-padding30">
+</section >
+<section id="team">  <div class="team-area section-padding30">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="cl-xl-7 col-lg-8 col-md-10">
@@ -339,7 +340,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div></section>
+    <!-- our team start  -->
+     
     <!-- our team end-->
 <!--testimonail start-->
       <section>
@@ -381,9 +384,9 @@
                 <!-- Form Start -->
                 <div class="col-xl-4 col-lg-5 col-md-8">
                     <div class="testimonial-form text-center">
-                        <h3>Always listening, always understanding.</h3>
-                        <input type="text" placeholder="Incoterms">
-                        <button name="submit" class="submit-btn">Request a Quote</button>
+                        <h3>Always  understanding.</h3>
+                        <input type="text" placeholder="Email">
+                        <button name="submit" class="submit-btn">Request App</button>
                     </div>
                 </div>
                 <!-- Form End -->
@@ -392,7 +395,7 @@
     </div>
     <!-- Testimonial End -->
       </section>
-      <section>
+      <section id="blog">
            <!--? Blog Area Start -->
     <div class="home-blog-area section-padding30">
         <div class="container">
@@ -477,7 +480,7 @@
     </div>
     <!-- Blog Area End -->
       </section>
-      <section>
+      <section id="footer">
             <div class="footer-area footer-bg">
         <div class="container">
             <div class="footer-top footer-padding">
@@ -501,10 +504,11 @@
                             <div class="footer-tittle text-center">
                                 <h4 class="text-center">COMPANY</h4>
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Company</a></li>
-                                    <li><a href="#"> Press & Blog</a></li>
-                                    <li><a href="#"> Privacy Policy</a></li>
+                                      <li><a href="#home"> home</a></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#service">Service</a></li>
+                                    <li><a href="#blog"> Blog</a></li>
+                                  
                                 </ul>
                             </div>
                         </div>
