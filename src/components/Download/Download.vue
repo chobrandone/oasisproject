@@ -9,7 +9,7 @@
 
    </div>
    
-   <div class="text-left">
+   <div class="text-leftbg">
        <h3>procedure</h3>
        <ol>
            <li>start</li>

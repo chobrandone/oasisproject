@@ -302,9 +302,18 @@
 }
 
 
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-area .hero__caption {
         padding-top: 50px
+    }
+    .slider-active{
+        /* background-image: url(../../assets/img/hero/video.jpg); */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../../assets/img/hero/video.jpg");
+         min-height: 500px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover
     }
 }
 
@@ -326,6 +335,7 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .slider-area .hero__caption h1 {
+        padding-top: 50px;
         font-size: 60px;
         line-height: 1.2
     }
@@ -333,17 +343,29 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-area .hero__caption h1 {
+        padding-top: 50px;
         font-size: 50px;
         line-height: 1.2
     }
+    .slider-active{
+        /* background-image: url(../../assets/img/hero/video.jpg); */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../../assets/img/hero/video.jpg");
+         min-height: 500px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover
+    }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 900px) {
     .slider-area .hero__caption h1 {
+        padding-top: 100px;
         font-size: 35px;
         line-height: 1.2
     }
+
 }
+
 
 @media (max-width: 575px) {
     .slider-area .hero__caption h1 {
@@ -622,6 +644,7 @@
 }
 
 .categories-area .single-cat .cat-cap h5>a {
+    cursor: pointer;
    font-size: 36px;
    font-weight: 700;
    margin-bottom: 21px;
@@ -647,6 +670,7 @@
 }
 
 .categories-area .single-cat .cat-cap p {
+    cursor: pointer;
    margin-bottom: 36px;
    color: #57667e;
    font-size: 16px;
@@ -953,8 +977,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .about-low-area .about-img .about-font-img {
-        position: unset
+    .about-low-area .about-img .about-font-img img{
+        position: unset;
+        display: none;
     }
 }
 
@@ -2149,6 +2174,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .foot-content h6{
     text-align: center;
+}
+.footer-dsign{
+    color: white;
 }
  /*footer ends here*/
 

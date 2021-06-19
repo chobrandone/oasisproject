@@ -7,11 +7,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-9 col-lg-9">
-                            <div class="hero__caption">
-                                <h1 >Welcome to the   <span>OASIS</span> WORLD</h1>
+                            <div class="hero__caption text-center">
+                                <h1 class="text-center" >Welcome to the   <span>OASIS</span> WORLD</h1>
                             </div>
                             <!--Hero form -->
-                            <form action="#" class="search-box">
+                            <form action="" method="POST" class="search-box text-center">
                                 <div class="input-form">
                                     <input type="text" placeholder="Your Tracking ID">
                                 </div>
