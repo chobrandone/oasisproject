@@ -1,7 +1,8 @@
 <template>
-   <!--? About Area Start -->
+<div>  
+    <Header/>
     <div class="about-low-area padding-bottom mt-5 mb-5 main-about">
-        <div class="container">
+        <div class="container main-abouts">
             <div class="row about-row">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-caption mb-50">
@@ -27,9 +28,15 @@
             </div>
         </div>
     </div>
+    <Footer/>
+    </div>
+   <!--? About Area Start -->
+  
     <!-- About Area End -->
 </template>
 <script>
+import Header from '../Header/Header.vue'
+import Footer from '../Footer/Footer.vue'
 export default {
     name:"About",
     data() {
@@ -37,14 +44,18 @@ export default {
             
         }
     },
+    components:{
+Header,
+Footer
+    }
 }
 </script>
 <style scoped >
 .about-row {
     margin-bottom: 100px;
     }
-    .main-about{
-        margin-top: 100px;
+    .main-abouts{
+        margin-top: 200px;
     }
 .latest_blog_area {
     background: #f9f9ff
@@ -222,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     right: 47px;
     top: 0px;
-    height: 500px;
+    height: 700px;
     width: 400px;
     margin-top: -50px;
 }

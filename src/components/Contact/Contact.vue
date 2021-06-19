@@ -176,7 +176,8 @@ export default {
 }
 
 .contact-section {
-    padding: 130px 0 100px
+    padding: 130px 0 100px;
+   
 }
 
 @media (max-width: 991px) {

@@ -27,45 +27,37 @@
                     </div>
                 </div>
             </div>
-            <div class="header-bottom  header-sticky">
+           <div class="header-bottom">
+            <b-navbar toggleable="lg" type="dark" class="header-area ">
                 <div class="container">
-                    
-                    <div class="row align-items-center">
-                        <!-- Logo -->
-                        <div class="col-xl-2 col-lg-2 oasislogo">
-                            <div class="logo">
-                                <a href="index.html"><img src="../../assets/img/logo/oaislogo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-10 col-lg-10">
-                            <div class="menu-wrapper  d-flex align-items-center justify-content-end">
-                                <!-- Main-menu -->
-                                <div class="main-menu d-none d-lg-block">
-                                    <nav> 
-                                        <ul id="navigation">                                                                                          
-                                            <li><a  id="home"> Home </a> </li>
-                                           <li><a id="about">About </a> </li>
-                                            <li><a id="service">Services</a></li>
-                                            <li><a id="blog" @click="blog"> Blog</a>
-                                               
-                                            </li>
-                                            <li><a @click="contact">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
+                    <div class="oasislogo">
+                        <b-navbar-brand href="#" class="logo"> <a href="index.html"><img src="../../assets/img/logo/oaislogo.png" alt=""></a></b-navbar-brand>
+                    </div>
+
+                    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+                    <b-collapse id="nav-collapse" is-nav>
+
+                        <!-- Right aligned nav items -->
+                        <b-navbar-nav class="ml-auto">
+                            <b-navbar-nav>
+                                <b-nav-item @click="home" class="link">Home</b-nav-item>
+                                <b-nav-item href="#about" class="link">About</b-nav-item>
+                                <b-nav-item href="#ervices" class="link">Services</b-nav-item>
+                                <b-nav-item href="#blog" class="link">Blog</b-nav-item>
+                                <b-nav-item href="#contact" class="link">Contact</b-nav-item>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20 text-left">
-                                    <a href="contact.html" class="btn header-btn">Get Oasis App</a>
+                                    <a @click="download" class="btn header-btn">Get Oasis App</a>
                                 </div>
-                            </div>
-                        </div> 
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
+                            </b-navbar-nav>
+
+                        </b-navbar-nav>
+                    </b-collapse>
+
                 </div>
-            </div>
+            </b-navbar>
+        </div>
         </div>
         
     </div>
@@ -430,6 +422,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="home-blog-single mb-30">
@@ -476,6 +469,7 @@
                     </div>
                 </div>
             </div>
+            <div> <div class="mt-3"> <a @click="log" class="btn text-light">view all blog</a></div></div>
         </div>
     </div>
     <!-- Blog Area End -->
@@ -562,8 +556,18 @@
                     </div>
                 </div>
             </div>
+            <hr>
             <!-- Footer Bottom -->
-          
+               <div class="header-top d-none d-lg-block">
+                <div class="container">
+                    <div class="col-xl-12">
+                        <div class="row  foot-content">
+                            <h6 class="text-center">Design by @Brandone</h6>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
@@ -629,6 +633,11 @@ export default {
         }
     },
       methods: {
+            home: function () {
+      this.$router.push({
+        path: "/",
+      });
+    },
     blog: function () {
       this.$router.push({
         path: "/blog",
@@ -640,6 +649,16 @@ export default {
         path: "/contact",
       });
     },
+      about: function () {
+      this.$router.push({
+        path: "/about",
+      });
+    },
+      download: function () {
+            this.$router.push({
+                path: "/download",
+            });
+        },
   },
     
 }

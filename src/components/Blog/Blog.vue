@@ -1,11 +1,14 @@
 <template>
-   <!--? Blog Area Start -->
-  
-    <div class="">
-        <div class="mb-5">  <Head/></div>
-      
-        <main>
-       
+<!--? Blog Area Start -->
+
+<div class="">
+    <div class="mb-5">
+
+        <Head />
+    </div>
+
+    <main>
+
         <!--================Blog Area =================-->
         <section class="blog_area section-padding">
             <div class="container">
@@ -31,6 +34,13 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-collapse id="collapse-1" class="mt-2">
+                                        <b-card>
+                                            <p class="card-text">view full content</p>
+
+                                        </b-card>
+                                    </b-collapse>
                                 </div>
                             </article>
 
@@ -53,6 +63,13 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-collapse id="collapse-1" class="mt-2">
+                                        <b-card>
+                                            <p class="card-text">view full content</p>
+
+                                        </b-card>
+                                    </b-collapse>
                                 </div>
                             </article>
 
@@ -75,6 +92,13 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-collapse id="collapse-1" class="mt-2">
+                                        <b-card>
+                                            <p class="card-text">view full content</p>
+
+                                        </b-card>
+                                    </b-collapse>
                                 </div>
                             </article>
 
@@ -97,6 +121,13 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-collapse id="collapse-1" class="mt-2">
+                                        <b-card>
+                                            <p class="card-text">view full content</p>
+
+                                        </b-card>
+                                    </b-collapse>
                                 </div>
                             </article>
 
@@ -119,6 +150,13 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-collapse id="collapse-1" class="mt-2">
+                                        <b-card>
+                                            <p class="card-text">view full content</p>
+
+                                        </b-card>
+                                    </b-collapse>
                                 </div>
                             </article>
 
@@ -141,6 +179,7 @@
                                         </a>
                                     </li>
                                 </ul>
+                            
                             </nav>
                         </div>
                     </div>
@@ -150,16 +189,13 @@
                                 <form action="#">
                                     <div class="form-group">
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder='Search Keyword'
-                                                onfocus="this.placeholder = ''"
-                                                onblur="this.placeholder = 'Search Keyword'">
+                                            <input type="text" class="form-control" placeholder='Search Keyword' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
                                             <div class="input-group-append">
                                                 <button class="btns" type="button"><i class="ti-search"></i></button>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                        type="submit">Search</button>
+                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">Search</button>
                                 </form>
                             </aside>
 
@@ -310,17 +346,14 @@
                                 </ul>
                             </aside>
 
-
                             <aside class="single_sidebar_widget newsletter_widget">
                                 <h4 class="widget_title">Newsletter</h4>
 
                                 <form action="#">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                                        <input type="email" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
                                     </div>
-                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                                        type="submit">Subscribe</button>
+                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">Subscribe</button>
                                 </form>
                             </aside>
                         </div>
@@ -330,32 +363,42 @@
         </section>
         <!--================Blog Area =================-->
     </main>
-    <div><Footer/></div>
-
+    <div>
+        <Footer />
     </div>
-    <!-- Blog Area End -->
+
+</div>
+<!-- Blog Area End -->
 </template>
+
 <script>
 import Head from "../Header/Header.vue";
 import Footer from "../Footer/Footer.vue"
 // import image from "../../assets/img/post/"
 export default {
-    name:"Blog",
+    name: "Blog",
     data() {
         return {
-            
+
         }
     },
-      components:{
+    components: {
         Head,
-       
+
         Footer
-        
+
     },
 }
 </script>
-<style scoped>
 
+<style scoped>
+.toggle-btn{
+    background:#f15f22 ;
+    border: 0px;
+}
+.toggle-btn:hover{
+    background:#EDC750 ;
+}
 .boxed-btn {
     background: #fff;
     color: #f15f22 !important;
@@ -372,8 +415,9 @@ export default {
     text-transform: uppercase;
     cursor: pointer;
 }
-.boxed-btn:hover{
-    background:  #f15f22;
+
+.boxed-btn:hover {
+    background: #f15f22;
     color: #fff !important;
 }
 
@@ -466,14 +510,17 @@ export default {
 .latest-blog-area .area-heading {
     margin-bottom: 70px
 }
-
+.blog_area{
+    margin-top: 200px !important;
+}
 .blog_area a {
     color: "Josefin Sans", sans-serif !important;
     text-decoration: none;
     transition: .4s
 }
 
-.blog_area a:hover, .blog_area a :hover {
+.blog_area a:hover,
+.blog_area a :hover {
     background: -webkit-linear-gradient(131deg, #c6a16e 0%, #c6a16e 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -554,6 +601,7 @@ export default {
     .single-blog .tag {
         margin-right: 8px
     }
+
     .single-blog .tag:after {
         display: none
     }
@@ -606,6 +654,7 @@ export default {
         padding-bottom: 14px;
         margin-bottom: 12px
     }
+
     .single-blog h4 a {
         font-size: 18px
     }
@@ -807,7 +856,8 @@ export default {
     color: #999999
 }
 
-.blog-info-link li i, .blog-info-link li span {
+.blog-info-link li i,
+.blog-info-link li span {
     font-size: 13px;
     margin-right: 5px
 }
@@ -965,7 +1015,8 @@ export default {
     border-left: 0
 }
 
-.blog_right_sidebar .newsletter_widget .input-group button i, .blog_right_sidebar .newsletter_widget .input-group button span {
+.blog_right_sidebar .newsletter_widget .input-group button i,
+.blog_right_sidebar .newsletter_widget .input-group button span {
     font-size: 14px;
     color: #fff
 }
@@ -1087,7 +1138,8 @@ export default {
     margin-right: 10px
 }
 
-.blog-pagination .page-link i, .blog-pagination .page-link span {
+.blog-pagination .page-link i,
+.blog-pagination .page-link span {
     font-size: 13px
 }
 
@@ -1174,5 +1226,4 @@ export default {
 .single-post-area .blog-author h4 {
     font-size: 16px
 }
-    
 </style>

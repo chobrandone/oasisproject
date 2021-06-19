@@ -1,4 +1,9 @@
 /* header style*/
+.link:hover {
+    background: #f15f22;
+    padding: 0px 10px;
+    border-radius: 20px;
+}
 .oasislogo img{
     height: 100px;
 }
@@ -2141,6 +2146,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-area .footer-social a:hover {
     color: #fff
+}
+.foot-content h6{
+    text-align: center;
 }
  /*footer ends here*/
 
