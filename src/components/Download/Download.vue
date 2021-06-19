@@ -1,15 +1,15 @@
 <template>
     <div>
        <Header/>
-  <div class="container mt-5 mb-5">
-      <div> <h4>How to get the App installed</h4>
+  <div class="container mt-5 mb-5 main-download">
+      <div class="mb-5"> <h4>How to get the App installed</h4>
    </div>
    <div>
                 <iframe width="1180" height="664" src="https://www.youtube.com/embed/1Gsg3Up7GtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
    </div>
    
-   <div>
+   <div class="text-left">
        <h3>procedure</h3>
        <ol>
            <li>start</li>
@@ -47,6 +47,8 @@ export default {
     }
 }
 </script>
-<style >
-    
+<style scoped>
+    .main-download{
+        margin-top: 200px!important;
+    }
 </style>
