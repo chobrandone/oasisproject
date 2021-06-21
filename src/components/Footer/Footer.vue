@@ -166,7 +166,7 @@ export default {
 
 .footer-area .footer-heading .contact-number {
     color: #EDC750;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700
 }
 

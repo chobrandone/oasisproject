@@ -1,8 +1,6 @@
 <template>
     <div>
-         <section class="Header"><Header/></section>
-           <section class="Hero"><Hero/></section>
-           <section class="Footer"><Footer/></section>
+        this is the blog section 
     </div>
 </template>
 <script>

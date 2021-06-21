@@ -1,102 +1,117 @@
-<template >
- <header>
+<template>
+<header>
     <!-- Header Start -->
-    <div class="header-area">
-        <div class="main-header ">
-            <div class="header-top d-none d-lg-block">
+    <div>
+
+        <div class="header-bottom fixed-top ">
+            <b-navbar toggleable="lg" type="dark" class="header-area ">
                 <div class="container">
-                    <div class="col-xl-12">
-                        <div class="row d-flex justify-content-between align-items-center">
-                            <div class="header-info-left">
-                                <ul>     
-                                    <li>Phone: +99 (0) 101 0000 888</li>
-                                    <li>Email: noreply@yourdomain.com</li>
-                                </ul>
-                            </div>
-                            <div class="header-info-right">
-                                <ul class="header-social">    
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="oasislogo">
+                        <b-navbar-brand href="#" class="logo"> <a href="index.html"><img src="../../assets/img/logo/oaislogo.png" alt=""></a></b-navbar-brand>
                     </div>
-                </div>
-            </div>
-            <div class="header-bottom  header-sticky">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <!-- Logo -->
-                        <div class="col-xl-2 col-lg-2 oasislogo">
-                            <div class="logo">
-                                <a href="index.html"><img src="../../assets/img/logo/oaislogo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-10 col-lg-10">
-                            <div class="menu-wrapper  d-flex align-items-center justify-content-end">
-                                <!-- Main-menu -->
-                                <div class="main-menu d-none d-lg-block">
-                                    <nav> 
-                                        <ul id="navigation">                                                                                          
-                                            <li><a href="#home-section">Home</a></li>
-                                            <li><a href="#about-section">About</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="blog.html">Blog</a>
-                                               
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
+
+                    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+                    <b-collapse id="nav-collapse" is-nav>
+
+                        <!-- Right aligned nav items -->
+                        <b-navbar-nav class="ml-auto">
+                            <b-navbar-nav>
+                                <b-nav-item @click="home" class="link">Home</b-nav-item>
+                                <b-nav-item @click="about" class="link">About</b-nav-item>
+                                <b-nav-item @click="service" class="link">Services</b-nav-item>
+                                <b-nav-item @click="blog" class="link">Blog</b-nav-item>
+                                <b-nav-item @click="contact" class="link">Contact</b-nav-item>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20 text-left">
-                                    <a href="contact.html" class="btn header-btn">Get A Qoue</a>
+                                    <a @click="download" class="btn header-btn">Get Oasis App</a>
                                 </div>
-                            </div>
-                        </div> 
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
+                            </b-navbar-nav>
+
+                        </b-navbar-nav>
+                    </b-collapse>
+
                 </div>
-            </div>
+            </b-navbar>
         </div>
+
     </div>
     <!-- Header End -->
 </header>
 </template>
+
 <script>
 export default {
-    name:"Header",
+    name: "Header",
     data() {
         return {
-            
+            scrollPosition: null,
         }
     },
-     methods: {
-    aboutus: function () {
-      this.$router.push({
-        path: "/aboutus",
-      });
+    methods: {
+        updateScroll() {
+            this.scrollPosition = window.scrollY
+        },
+        blog: function () {
+            this.$router.push({
+                path: "/blog",
+            });
+        },
+        contact: function () {
+            this.$router.push({
+                path: "/contact",
+            });
+        },
+        home: function () {
+            this.$router.push({
+                path: "/",
+            });
+        },
+          about: function () {
+            this.$router.push({
+                path: "/about",
+            });
+        },
+         download: function () {
+            this.$router.push({
+                path: "/download",
+            });
+        },
+          service: function () {
+            this.$router.push({
+                path: "/service",
+            });
+        },
+
     },
-  },
-    
+    mounted() {
+        window.addEventListener('scroll', this.updateScroll);
+    },
+
 }
 </script>
-<style >
-.oasislogo img{
+
+<style scoped>
+.link:hover {
+    background: #f15f22;
+    padding: 0px 10px;
+    padding-top:3px;
+    border-radius: 22px;
+}
+
+.oasislogo img {
     height: 100px;
 }
+
 .ml-20 {
     margin-left: 20px;
 }
+
 .d-lg-block {
     display: block !important;
-  
+
 }
+
 .btn {
     padding: 20px;
     text-transform: uppercase;
@@ -121,12 +136,42 @@ export default {
     overflow: hidden;
     margin: 0px;
 }
+
 .header-btn {
-    padding:  35px;
+    padding: 35px;
 }
+
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
+
+.mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
+    background-color: #f15f22 !important
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav {
+    margin-top: 9px !important;
+    box-shadow: 0 0 10px 3px rgba(141, 140, 140, 0.5)
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav a:hover {
+    background: transparent;
+    color: #f15f22
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav a {
+    font-size: 15px;
+    padding: 7px 10px
+}
+
+.mobile_menu .slicknav_menu .slicknav_nav .slicknav_item a {
+    padding: 0 !important
+}
+
+.header-btn {
+    padding: 25px 35px
+}
+
 .mobile_menu {
     position: absolute;
     right: 0px;
@@ -165,12 +210,15 @@ export default {
 .mobile_menu .slicknav_menu .slicknav_nav .slicknav_item a {
     padding: 0 !important
 }
+
 .header-btn {
     padding: 25px 35px
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-area .header-bottom {
-        padding: 15px 0px
+
+        height: 50px;
     }
 }
 
@@ -187,7 +235,7 @@ export default {
 }
 
 .header-area {
-    background: #000c20
+    background: #000c20;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -256,13 +304,24 @@ export default {
 .main-header .main-menu ul li {
     display: inline-block;
     position: relative;
-    z-index: 1
+    z-index: 1;
+    list-style-type: none;
+
+}
+
+.main-header .main-menu ul li:hover {
+    background: #f15f22;
+    width: inherit;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 20px;
+
 }
 
 .main-header .main-menu ul li a {
     color: #fff;
-    font-weight: 400;
-    padding: 39px 19px;
+    font-weight: 200;
+    /* padding: 39px 19px; */
     display: block;
     font-size: 16px;
     -webkit-transition: all .3s ease-out 0s;
@@ -270,20 +329,20 @@ export default {
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-    text-transform: capitalize
+    text-transform: capitalize;
+    list-style-type: none;
+    padding: 5px 15px !important;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .main-header .main-menu ul li a {
-        padding: 39px 14px
+        /* padding: 39px 14px */
     }
 }
 
 .main-header .main-menu ul li:hover>a {
     color: #EDC750;
 }
-
-
 
 .header-transparent {
     position: absolute;
@@ -319,7 +378,7 @@ export default {
 }
 
 .header-sticky.sticky-bar.sticky .main-menu ul li a {
-    padding: 20px 20px !important
+    /* padding: 20px 20px !important */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

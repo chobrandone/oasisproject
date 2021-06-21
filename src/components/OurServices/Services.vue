@@ -1,5 +1,8 @@
 <template>
-     <div class="categories-area section-padding30">
+<!-- services start here-->
+<div> 
+    <Header/>
+    <div class="categories-area section-padding30">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -47,12 +50,28 @@
             </div>
         </div>
     </div>
+    <Footer/>
+    </div>
+    
+    <!-- services end here-->
 </template>
 <script>
+import Header from '../Header/Header.vue'
+import Footer from '../Footer/Footer.vue'
 export default {
+    data() {
+        return {
+            
+        }
+    },
+    components:{
+        Header,
+        Footer
+    }
     
 }
 </script>
+
 <style scoped>
  .service{
      margin-top: 20px;
