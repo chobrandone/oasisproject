@@ -47,8 +47,8 @@
                                         <b-nav-item href="#blog" class="link">Blog</b-nav-item>
                                         <b-nav-item href="#contact" class="link">Contact</b-nav-item>
                                         <!-- Header-btn -->
-                                        <div class="header-right-btn d-none d-lg-block ml-20 text-left">
-                                            <a @click="download" class="btn header-btn">Get Oasis App</a>
+                                        <div class="header-right-btn d-none d-lg-block ml-20 text-left ">
+                                            <a @click="download" class="btn header-btn">Download App</a>
                                         </div>
                                     </b-navbar-nav>
 
@@ -208,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-3"> <a @click="service" class="btn text-light">See all services</a></div>
+            <div class="mt-3"> <a @click="service" class="btn text-light header-btn">See all services</a></div>
         </div>
         <!-- services end here-->
     </section>
@@ -401,7 +401,7 @@
                     <div class="col-xl-4 col-lg-5 col-md-8">
                         <div class="testimonial-form text-center">
                             <h3>Always understanding.</h3>
-                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Enter your email">
                             <button name="submit" class="submit-btn">Request App</button>
                         </div>
                     </div>

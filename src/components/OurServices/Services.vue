@@ -22,6 +22,13 @@
                         <div class="cat-cap">
                             <h5><a href="services.html">Land Transport</a></h5>
                             <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                <b-collapse id="collapse-1" class="mt-2">
+                                    <b-card>
+                                        <p class="card-text">view full content</p>
+
+                                    </b-card>
+                                </b-collapse>
                         </div>
                     </div>
                 </div>
@@ -33,6 +40,13 @@
                         <div class="cat-cap">
                             <h5><a href="services.html">Ship Transport</a></h5>
                             <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                <b-collapse id="collapse-1" class="mt-2">
+                                    <b-card>
+                                        <p class="card-text">view full content</p>
+
+                                    </b-card>
+                                </b-collapse>
                         </div>
                     </div>
                 </div>
@@ -44,6 +58,13 @@
                         <div class="cat-cap">
                             <h5><a href="services.html">Air Transport</a></h5>
                             <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                <b-collapse id="collapse-1" class="mt-2">
+                                    <b-card>
+                                        <p class="card-text">view full content</p>
+
+                                    </b-card>
+                                </b-collapse>
                         </div>
                     </div>
                 </div>

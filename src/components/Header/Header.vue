@@ -136,9 +136,17 @@ export default {
     overflow: hidden;
     margin: 0px;
 }
+.btn:hover{
+    background:#f15f22 ;
+    color: wheat;
+}
 
 .header-btn {
     padding: 35px;
+}
+.header-btn:hover{
+    background: #f15f22;
+    color: white;
 }
 
 .btn:not(:disabled):not(.disabled) {
