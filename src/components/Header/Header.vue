@@ -23,7 +23,7 @@
                                 <b-nav-item @click="blog" class="link">Blog</b-nav-item>
                                 <b-nav-item @click="contact" class="link">Contact</b-nav-item>
                                 <!-- Header-btn -->
-                                <div class="header-right-btn d-none d-lg-block ml-20 text-left">
+                                <div class="header-right-btn d-none d-lg-block ml-20 text-center">
                                     <a @click="download" class="btn header-btn">Get Oasis App</a>
                                 </div>
                             </b-navbar-nav>

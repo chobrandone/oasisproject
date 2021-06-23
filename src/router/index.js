@@ -6,6 +6,7 @@ import Aboutus from '../components/About/About.vue';
 import Download from '../components/Download/Download.vue'
 import Service from '../components/OurServices/Services.vue'
 
+
 const routes =[
 
     {

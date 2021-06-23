@@ -391,7 +391,9 @@ h1 h2 h3 h4 h5 p body{
     display: flex;
     flex-wrap: wrap;
     border-radius: 50px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .slider-area form.search-box .input-form {
@@ -2040,6 +2042,14 @@ h1, h2, h3, h4, h5, h6 {
     .footer-area .footer-heading .wantToWork-caption h2 {
         font-size: 30px
     }
+    .footer-area .footer-heading .wantToWork-caption h2 {
+        color: #fff;
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 1.2;
+        font-family: "Barlow", sans-serif;
+        margin: 0
+    }
 }
 
 @media (max-width: 575px) {
@@ -2070,7 +2080,7 @@ h1, h2, h3, h4, h5, h6 {
     .footer-area .footer-heading .contact-number {
         float: left;
         margin-top: 20px;
-        font-size: 30px
+        font-size: px
     }
 }
 
@@ -2097,6 +2107,14 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .footer-area .footer-top .single-footer-caption .footer-pera .info1 {
         padding-right: 0px
+    }
+    .footer-area .footer-heading .wantToWork-caption h2 {
+        color: #fff;
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 1.2;
+        font-family: "Barlow", sans-serif;
+        margin: 0
     }
 }
 
@@ -2126,13 +2144,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     text-transform: uppercase
 }
+ .footer-list  {
+    color: #bbbcbc;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 15px;
 
+    list-style-type: none;
+    cursor: pointer;
+  margin-left: -40px !important;
+}
 .footer-area .footer-top .single-footer-caption .footer-tittle ul li {
     color: #bbbcbc;
     margin-bottom: 15px;
     text-transform: capitalize;
     font-size: 15px;
-    text-align: justify;
+
     list-style-type: none;
     cursor: pointer;
 }

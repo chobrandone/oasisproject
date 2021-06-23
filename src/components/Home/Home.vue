@@ -506,13 +506,13 @@
                 <div class="footer-top footer-padding">
                     <!-- footer Heading -->
                     <div class="footer-heading">
-                        <div class="row d-flex justify-content-between pt-5">
+                        <div class="row d-flex justify-content-between pt-5 pl-4 pr-4">
                             <div class=" text-center">
                                 <div class="wantToWork-caption wantToWork-caption2">
-                                    <h2 class="text-left pl-2 ">We Understand The Importance Knowledge!</h2>
+                                    <h2 class="text-left  ">We Understand The Importance Knowledge!</h2>
                                 </div>
                             </div>
-                            <div class=" text-center pr-2">
+                            <div class=" text-center ">
                                 <span class="contact-number f-right">+ 1 212-683-9756</span>
                             </div>
                         </div>
@@ -523,7 +523,7 @@
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle text-center">
                                     <h4 class="text-center">COMPANY</h4>
-                                    <ul>
+                                    <ul class="text-center footer-list">
                                         <li><a href="#home"> home</a></li>
                                         <li><a href="#about">About Us</a></li>
                                         <li><a href="#service">Service</a></li>
@@ -537,8 +537,8 @@
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4 class="text-center">Open hour</h4>
-                                    <ul>
-                                        <li><a href="#">Monday 11am-7pm</a></li>
+                                    <ul class="text-center footer-list">
+                                        <li><a href="#" class="">Monday 11am-7pm</a></li>
                                         <li><a href="#"> Tuesday-Friday 11am-8pm</a></li>
                                         <li><a href="#"> Saturday 10am-6pm</a></li>
                                         <li><a href="#"> Sunday 11am-6pm</a></li>
@@ -550,7 +550,7 @@
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4 class="text-center">RESOURCES</h4>
-                                    <ul>
+                                    <ul class="text-center footer-list">
                                         <li><a href="#">Home Insurance</a></li>
                                         <li><a href="#"> Insurance</a></li>
                                         <li><a href="#"> Insurance</a></li>
@@ -584,7 +584,7 @@
                 </div>
                 <hr>
                 <!-- Footer Bottom -->
-                <div class="header-top d-none d-lg-block footer-dsign">
+                <div class=" footer-dsign">
                     <p class="pt-2 pb-2">design by @brandone</p>
 
                 </div>
