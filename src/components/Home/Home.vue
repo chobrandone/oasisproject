@@ -18,9 +18,12 @@
                                 <div class="header-info-right">
                                     <ul class="header-social">
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
                                         <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li> <a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
+                                        <li> <a href="https://www.youtube.com/channel/UCoewA9dAUWXFFGZIDsEJTvw"><i class="fab fa-youtube"></i></a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>
