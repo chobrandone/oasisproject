@@ -110,7 +110,7 @@
                             </div>
                             <div class="info-caption">
                                 <p>Call Us Anytime</p>
-                                <span>+ (123) 1800-567-8990</span>
+                                <span>+234 813 597 9932</span>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,8 @@
                             </div>
                             <div class="info-caption">
                                 <p>Sunday CLOSED</p>
-                                <span>Mon - Sat 8.00 - 18.00</span>
+                                <span>Mon - Fri 7.30am - 5pm (GMT+1)</span>
+                                <span>Saturday 8am - 3pm (GMT+1)</span>
                             </div>
                         </div>
                     </div>
@@ -131,8 +132,8 @@
                                 <span class="flaticon-place"></span>
                             </div>
                             <div class="info-caption">
-                                <p>Columbia, SC 29201</p>
-                                <span>USA, New York - 10620</span>
+                                <p>Heart plaza 2nd floor , suit C24.2nd floor Karu Local government</p>
+                                <span>Mararaba, Nigeria</span>
                             </div>
                         </div>
                     </div>
@@ -226,10 +227,10 @@
                             <!-- Section Tittle -->
                             <div class="section-tittle mb-35 text-left">
                                 <span>About Our App</span>
-                                <h2>Safe Logistic & Transport Solutions That Saves our Valuable Time!</h2>
+                                <h2>Our app is an independent money making networking platform </h2>
                             </div>
-                            <p class="text-left">Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
-                            <p class="text-left">Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
+                            <p class="text-left">Through our app persons of all works of life can benefit from at a low cost though its strategic partnership. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
+
                             <div class="text-left"><a @click="about" class="btn text-light ">More About Us</a></div>
 
                         </div>
