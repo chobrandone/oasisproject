@@ -105,6 +105,9 @@ export default {
 }
 </script>
 <style scoped>
+#footer{
+  
+}
   .oasislogo img{
     height: 100px;
 }
