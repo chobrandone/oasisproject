@@ -1,5 +1,7 @@
 <template>
 <div>
+    <Head/>
+    <Teamhero/>
    <div class="team-area section-padding30">
         <div class="container">
             <div class="row justify-content-center">
@@ -15,10 +17,10 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
-                            <img src="../../assets/img/gallery/team1.png" alt="">
+                            <img src="../../assets/img/team/team1.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
+                                <h3><a href="#">Mr. David Brian</a></h3>
+                                <p>C.E.O</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -35,10 +37,10 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
-                            <img src="../../assets/img/gallery/team2.png" alt="">
+                            <img src="../../assets/img/team/team2.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
+                                <h3><a href="#">Mr. IMO JOSEPH</a></h3>
+                                <p>Dirctor Of Operations</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -55,10 +57,30 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
-                            <img src="../../assets/img/gallery/team3.png" alt="">
+                            <img src="../../assets/img/team/team3.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
+                                <h3><a href="#">Mrs. JOY OBOT</a></h3>
+                                <p>Sectary General</p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="../../assets/img/team/team4.png" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Mrs. FAITH BABALOLA</a></h3>
+                                <p>Managing Director</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -75,9 +97,13 @@
             </div>
         </div>
     </div>
+    <Footer/>
     </div>
 </template>
 <script>
+import Head from "../Header/Header.vue"
+import Teamhero from "./Teamhero.vue"
+import Footer from "../Footer/Footer.vue"
 export default {
     name:"Team",
     data() {
@@ -85,11 +111,16 @@ export default {
             
         }
     },
+    components:{
+        Head,
+        Footer,
+        Teamhero
+    }
 }
 </script>
 <style scoped>
     .section-tittle span {
-    font-size: 18px;
+    font-size: 30px;
     display: block;
     color: #EDC750;
     font-weight: 600;
@@ -102,7 +133,8 @@ export default {
 }
 
 .team-area .single-team .team-img img {
-    width: 100%
+    width: 100%;
+    height: 400px;
 }
 
 .team-area .single-team .team-caption {

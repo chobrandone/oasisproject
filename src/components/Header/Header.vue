@@ -3,7 +3,7 @@
     <!-- Header Start -->
     <div>
 
-        <div class="header-bottom fixed-top ">
+        <div class="header-bottom  ">
             <b-navbar toggleable="lg" type="dark" class="header-area ">
                 <div class="container">
                     <div class="oasislogo">
@@ -23,7 +23,7 @@
                                 <b-nav-item @click="blog" class="link">Blog</b-nav-item>
                                 <b-nav-item @click="contact" class="link">Contact</b-nav-item>
                                 <!-- Header-btn -->
-                                <div class="header-right-btn d-none d-lg-block ml-20 text-left">
+                                <div class="header-right-btn d-none d-lg-block ml-20 text-center">
                                     <a @click="download" class="btn header-btn">Get Oasis App</a>
                                 </div>
                             </b-navbar-nav>
@@ -136,9 +136,17 @@ export default {
     overflow: hidden;
     margin: 0px;
 }
+.btn:hover{
+    background:#f15f22 ;
+    color: wheat;
+}
 
 .header-btn {
     padding: 35px;
+}
+.header-btn:hover{
+    background: #f15f22;
+    color: white;
 }
 
 .btn:not(:disabled):not(.disabled) {
