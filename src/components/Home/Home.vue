@@ -227,6 +227,7 @@
                             <!-- Section Tittle -->
                             <div class="section-tittle mb-35 text-left">
                                 <span>About OASIS PLANET TECH</span>
+                                  <h2>Our app is an independent money making networking platform</h2>
                               
                             </div>
                             <p class="text-left"> OASIS PLANET TECH is a cooperate organization that exist to equip, empower, train and develop young entrepreneurs with technological skills, positive thinking and innovative mindsets to provide solutions to Africa and the world’s economy through technology.</p>
