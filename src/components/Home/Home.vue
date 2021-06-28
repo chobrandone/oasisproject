@@ -11,8 +11,8 @@
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left">
                                     <ul>
-                                        <li>Phone: +99 (0) 101 0000 888</li>
-                                        <li>Email: noreply@yourdomain.com</li>
+                                        <li>Phone: +234 813 597 9932</li>
+                                        <li>Email: oasisplanettech21@gmail.com</li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
@@ -107,7 +107,7 @@
                             </div>
                             <div class="info-caption">
                                 <p>Call Us Anytime</p>
-                                <span>+ (123) 1800-567-8990</span>
+                                <span>+234 813 597 9932</span>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="info-caption">
                                 <p>Sunday CLOSED</p>
-                                <span>Mon - Sat 8.00 - 18.00</span>
+                                <span>Mon - Sat 8.00Am - 6.00Pm</span>
                             </div>
                         </div>
                     </div>
@@ -128,8 +128,8 @@
                                 <span class="flaticon-place"></span>
                             </div>
                             <div class="info-caption">
-                                <p>Columbia, SC 29201</p>
-                                <span>USA, New York - 10620</span>
+                                <p>Marketing agency, LGA Karu</p>
+                                <span>Abuja, Nigeria - Heart Plaza</span>
                             </div>
                         </div>
                     </div>
@@ -157,8 +157,8 @@
                                 <span class="flaticon-shipped"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a>Land Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a>Digital Marketing</a></h5>
+                                <p>Oasis Planet Tech is a Digital Marketing platform with vision in revolutionizing and digitalizing the marketing world with new and advanced features.</p>
                                 <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
                                 <b-collapse id="collapse-1" class="mt-2">
                                     <b-card>
@@ -175,8 +175,8 @@
                                 <span class="flaticon-ship"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a>Ship Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a>Network Marketing</a></h5>
+                                <p>Through the oasis planet tech has a mobile app where person accross the globe can earn money independently by doing various tasks on the app.</p>
                                 <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
                                 <b-collapse id="collapse-1" class="mt-2">
                                     <b-card>
@@ -193,8 +193,8 @@
                                 <span class="flaticon-plane"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">Air Transport</a></h5>
-                                <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                                <h5><a href="services.html">Trade And Earn</a></h5>
+                                <p>the era of 'bring 2" before you earn is over, With Oasis Planet Tech you can Earn money by simply watching videos and get paid directly with UBA.</p>
 
                                 <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
                                 <b-collapse id="collapse-1" class="mt-2">
@@ -222,11 +222,11 @@
                         <div class="about-caption mb-50">
                             <!-- Section Tittle -->
                             <div class="section-tittle mb-35 text-left">
-                                <span>About Our App</span>
-                                <h2>Safe Logistic & Transport Solutions That Saves our Valuable Time!</h2>
+                                <span>About Us</span>
+                                <h2>Oasis Planet Tech is a Corperote organization known for its competency and integrity</h2>
                             </div>
-                            <p class="text-left">Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
-                            <p class="text-left">Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
+                            <p class="text-left">We aimed at equipping, empowering, training and developing young entrepreneurs with technological skills that will prepare them to start a career.</p>
+                            <p class="text-left">Join the winning team today and unlock the doors to success. Hurry and register with Oasis Planet Tech,  We also promote the spirit of creativity, innovation and productivity. </p>
                             <div class="text-left"><a @click="about" class="btn text-light ">More About Us</a></div>
 
                         </div>
@@ -380,7 +380,7 @@
                                 <!-- Testimonial Content -->
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap text-left">
-                                        <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
+                                        <p>I'm here to thank you all for you good work of your company, its just like magic to me, i can now watch videos and earn directly with my UBA card, videos i used to watch for free. This is awesome</p>
                                     </div>
                                     <!-- founder -->
                                     <div class="testimonial-founder d-flex align-items-center">
@@ -388,8 +388,8 @@
                                             <img src="../../assets/img/gallery/Homepage_testi.png" alt="">
                                         </div>
                                         <div class="founder-text">
-                                            <span>Jhaon smith</span>
-                                            <p>Creative designer</p>
+                                            <span>Teke Rene</span>
+                                            <p>Trader</p>
                                         </div>
                                     </div>
                                 </div>
@@ -400,7 +400,7 @@
                     <!-- Form Start -->
                     <div class="col-xl-4 col-lg-5 col-md-8">
                         <div class="testimonial-form text-center">
-                            <h3>Always understanding.</h3>
+                            <h3>Subscribe To App.</h3>
                             <input type="text" placeholder="Email">
                             <button name="submit" class="submit-btn">Request App</button>
                         </div>
@@ -509,11 +509,11 @@
                         <div class="row d-flex justify-content-between pt-5">
                             <div class=" text-center">
                                 <div class="wantToWork-caption wantToWork-caption2">
-                                    <h2 class="text-left pl-2 ">We Understand The Importance Knowledge!</h2>
+                                    <h2 class="text-left pl-2 ">We Understand The Importance Of Knowledge!</h2>
                                 </div>
                             </div>
                             <div class=" text-center pr-2">
-                                <span class="contact-number f-right">+ 1 212-683-9756</span>
+                                <span class="contact-number f-right">+234 813 597 9932</span>
                             </div>
                         </div>
                     </div>
@@ -552,9 +552,9 @@
                                     <h4 class="text-center">RESOURCES</h4>
                                     <ul>
                                         <li><a href="#">Home Insurance</a></li>
-                                        <li><a href="#"> Insurance</a></li>
-                                        <li><a href="#"> Insurance</a></li>
-                                        <li><a href="#"> Insurance</a></li>
+                                        <li><a href="#"> Registration</a></li>
+                                        <li><a href="#"> Get Mobile App</a></li>
+                                        <li><a href="#"> Trade and Earn</a></li>
 
                                     </ul>
                                 </div>
@@ -568,7 +568,7 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p class="info1 text-center">GThe trade war currently ensuing between te US anfd several natxions around thdhe globe, most fiercely with.</p>
+                                        <p class="info1 text-center">Start the journey with Oasis Planet Tech today we empowers you with skills to become self independent.</p>
                                     </div>
                                 </div>
                                 <!-- Footer Social -->
