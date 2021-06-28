@@ -1,8 +1,13 @@
 <template>
   <div>
-      <div class="mb-5">
+      <div class="">
           <Head/>
       </div>
+      <div class="mb-5">
+
+          <Contacthero/>
+      </div>
+
        <main>
         
         <!-- ================ contact section start ================= -->
@@ -45,21 +50,21 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
-                                <h3>Buttonwood, California.</h3>
-                                <p>Rosemead, CA 91770</p>
+                                <h3>Mararaba, Nigeria</h3>
+                                <p>Heart plaza 2nd floor , suit C24.2nd floor Karu Local government</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>+1 253 565 2365</h3>
-                                <p>Mon to Fri 9am to 6pm</p>
+                                <h3> +234 813 597 9932</h3>
+                                <p>Mon - Sat 8.00Am - 6.00Pm</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>support@colorlib.com</h3>
+                                <h3>oasisplanettech21@gmail.com</h3>
                                 <p>Send us your query anytime!</p>
                             </div>
                         </div>
@@ -77,6 +82,7 @@
 <script>
 import Head from "../../components/Header/Header.vue"
 import Footer from "../Footer/Footer.vue"
+import Contacthero from "./Contacthero.vue"
 export default {
     name:"Contact",
     data() {
@@ -86,7 +92,8 @@ export default {
     },
     components:{
         Head,
-        Footer
+        Footer,
+        Contacthero
     }
 }
 </script>
@@ -176,19 +183,19 @@ export default {
 }
 
 .contact-section {
-    padding: 130px 0 100px;
+   
    
 }
 
 @media (max-width: 991px) {
     .contact-section {
-        padding: 70px 0 40px
+     
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .contact-section {
-        padding: 80px 0 50px
+      
     }
 }
 
