@@ -11,7 +11,7 @@
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left">
                                     <ul>
-                                        <li>Phone: +99 (0) 101 0000 888</li>
+                                        <li>Phone: +234 813 597 9932</li>
                                         <li>Email: noreply@yourdomain.com</li>
                                     </ul>
                                 </div>
@@ -20,7 +20,7 @@
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                      
                                         <li> <a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
                                         <li> <a href="https://www.youtube.com/channel/UCoewA9dAUWXFFGZIDsEJTvw"><i class="fab fa-youtube"></i></a></li>
                                         
@@ -51,7 +51,7 @@
                                         <b-nav-item href="#contact" class="link">Contact</b-nav-item>
                                         <!-- Header-btn -->
                                         <div class="header-right-btn d-none d-lg-block ml-20 text-left ">
-                                            <a @click="download" class="btn header-btn">Download App</a>
+                                            <a @click="download" class="btn header-btn">Get Oasis App</a>
                                         </div>
                                     </b-navbar-nav>
 
@@ -226,10 +226,10 @@
                         <div class="about-caption mb-50">
                             <!-- Section Tittle -->
                             <div class="section-tittle mb-35 text-left">
-                                <span>About Our App</span>
-                                <h2>Our app is an independent money making networking platform </h2>
+                                <span>About OASIS PLANET TECH</span>
+                              
                             </div>
-                            <p class="text-left">Through our app persons of all works of life can benefit from at a low cost though its strategic partnership. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
+                            <p class="text-left"> OASIS PLANET TECH is a cooperate organization that exist to equip, empower, train and develop young entrepreneurs with technological skills, positive thinking and innovative mindsets to provide solutions to Africa and the world’s economy through technology.</p>
 
                             <div class="text-left"><a @click="about" class="btn text-light ">More About Us</a></div>
 
@@ -287,81 +287,83 @@
         <!-- contact-form end -->
     </section>
     <section id="team">
-        <div class="team-area section-padding30">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="cl-xl-7 col-lg-8 col-md-10">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-70">
-                            <span>Our Team Mambers</span>
-                            <h2>What We Can Do For You</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
-                        <div class="single-team mb-30 text-center">
-                            <div class="team-img">
-                                <img src="../../assets/img/gallery/team1.png" alt="">
-                                <div class="team-caption">
-                                    <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
-                        <div class="single-team mb-30 text-center">
-                            <div class="team-img">
-                                <img src="../../assets/img/gallery/team2.png" alt="">
-                                <div class="team-caption">
-                                    <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
-                        <div class="single-team mb-30 text-center">
-                            <div class="team-img">
-                                <img src="../../assets/img/gallery/team3.png" alt="">
-                                <div class="team-caption">
-                                    <h3><a href="#">Mancherwan Kolin</a></h3>
-                                    <p>Health agent</p>
-                                    <!-- Blog Social -->
-                                    <div class="team-social">
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="team-area section-padding30">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="cl-xl-7 col-lg-8 col-md-10">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-70">
+                        <span>Our Team Mambers</span>
+                        <h2>What We Can Do For You</h2>
+                    </div> 
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="../../assets/img/team/team1.png" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Mr. David Brian</a></h3>
+                                <p>C.E.O</p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="../../assets/img/team/team2.png" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Mr. IMO JOSEPH</a></h3>
+                                <p>Dirctor Of Operations</p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="../../assets/img/team/team3.png" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Mrs. JOY OBOT</a></h3>
+                                <p>Sectary General</p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+            </div>
+             <div class="text-center"><a @click="team" class="btn text-light ">All Team Members</a></div>
         </div>
+    </div>
     </section>
     <!-- our team start  -->
 
@@ -411,6 +413,7 @@
                     </div>
                     <!-- Form End -->
                 </div>
+                
             </div>
         </div>
         <!-- Testimonial End -->
@@ -577,10 +580,12 @@
                                 </div>
                                 <!-- Footer Social -->
                                 <div class="footer-social ">
-                                    <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                   <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a>
+                                       <a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a>
+                                      
+                                        <a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCoewA9dAUWXFFGZIDsEJTvw"><i class="fab fa-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -679,6 +684,11 @@ export default {
         service: function () {
             this.$router.push({
                 path: "/service",
+            });
+        },
+         team: function () {
+            this.$router.push({
+                path: "/team",
             });
         },
     },

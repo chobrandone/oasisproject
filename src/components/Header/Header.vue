@@ -3,7 +3,7 @@
     <!-- Header Start -->
     <div>
 
-        <div class="header-bottom fixed-top ">
+        <div class="header-bottom  ">
             <b-navbar toggleable="lg" type="dark" class="header-area ">
                 <div class="container">
                     <div class="oasislogo">

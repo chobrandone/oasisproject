@@ -1,18 +1,29 @@
 <template>
-<div>  
-    <Header/>
-    <div class="about-low-area padding-bottom mt-5 mb-5 main-about">
+<div>
+    <Header />
+    <Abouthero />
+    <div class="about-low-area padding-bottom mb-5 main-about">
         <div class="container main-abouts">
-            <div class="row about-row">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- 16:9 -->
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/lZoeoCSXGY8"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row about-row  ">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-caption mb-50">
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-35 text-left">
-                            <span>About Our App</span>
-                            <h2>Safe Logistic & Transport  Solutions That Saves our Valuable Time!</h2>
+                            <h3>ABOUT OASIS PLANET TECH</h3>
+                            <h2>Our app is an independent money making networking platform</h2>
                         </div>
-                        <p class="text-left">Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
-                        <p class="text-left">Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
+                        <p class="text-left">OASIS PLANET TECH is a digital marketing platform with vision to revolutionize the digital marketing world founded in 2019 by David Brian, CEO OASIS PLANET TECH LIMITED was duly registered under company and Allied Matters Act 2020. Oasis planet Tech aim at creating an independent money making networking platform (Oasis mobile App) where persons from all works of life can benefit from at a very low cost through its strategic partnership. OASIS PLANET TECH through its partnership with both the banking and telecommunication institutions will be working hand in hand to ensure its smooth running of its planet.</p>
+                        <p class="text-left"> OASIS PLANET TECH is a cooperate organization that exist to equip, empower, train and develop young entrepreneurs with technological skills, positive thinking and innovative mindsets to provide solutions to Africa and the world’s economy through technology.</p>
                         <a href="about.html" class="btn">More About Us</a>
                     </div>
                 </div>
@@ -22,41 +33,48 @@
                         <div class="about-font-img">
                             <img src="../../assets/img/gallery/about2.png" alt="">
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <Footer/>
-    </div>
-   <!--? About Area Start -->
-  
-    <!-- About Area End -->
+    <Footer />
+</div>
+<!--? About Area Start -->
+
+<!-- About Area End -->
 </template>
+
 <script>
+import Abouthero from "./abouthero.vue"
 import Header from '../Header/Header.vue'
 import Footer from '../Footer/Footer.vue'
 export default {
-    name:"About",
+    name: "About",
     data() {
         return {
-            
+
         }
     },
-    components:{
-Header,
-Footer
+    components: {
+        Header,
+        Footer,
+        Abouthero
     }
 }
 </script>
-<style scoped >
+
+<style scoped>
 .about-row {
     margin-bottom: 100px;
-    }
-    .main-abouts{
-        margin-top: 200px;
-    }
+    margin-top: 100px;
+}
+
+.main-abouts {
+    margin-top: 10px;
+}
+
 .latest_blog_area {
     background: #f9f9ff
 }
@@ -133,6 +151,7 @@ Footer
     margin-right: auto;
     margin-left: auto;
 }
+
 .section-tittle span {
     font-size: 18px;
     display: block;
@@ -141,6 +160,7 @@ Footer
     text-transform: capitalize;
     margin-bottom: 17px;
 }
+
 .btn {
     background: #EDC750;
     padding: 27px 44px;
@@ -165,6 +185,7 @@ Footer
     overflow: hidden;
     margin: 0;
 }
+
 .section-tittle span {
     font-size: 18px;
     display: block;
@@ -173,6 +194,7 @@ Footer
     text-transform: capitalize;
     margin-bottom: 17px;
 }
+
 .section-tittle h2 {
 
     display: block;
@@ -180,17 +202,31 @@ Footer
     text-transform: capitalize;
     line-height: 1.3;
 }
-h1, h2, h3, h4, h5, h6 {
+.section-tittle h3 {
+color: #EDC750;
+    display: block;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.3;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Teko", sans-serif;
     color: #2c234d;
     margin-top: 0px;
-    font-style: normal;}
+    font-style: normal;
+}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px){
-.section-tittle h2 {
-    font-size: 42px;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .section-tittle h2 {
+        font-size: 42px;
+    }
 }
-}
+
 .about-low-area .about-caption p {
     font-size: 16px;
     color: #64676c;
@@ -215,13 +251,14 @@ h1, h2, h3, h4, h5, h6 {
     .about-low-area .about-caption p {
         padding-right: 0px
     }
+
     .section-tittle h2 {
-    font-size: 20px;
-    display: block;
-    font-weight: 600;
-    text-transform: capitalize;
-    line-height: 1.3;
-}
+        font-size: 20px;
+        display: block;
+        font-weight: 600;
+        text-transform: capitalize;
+        line-height: 1.3;
+    }
 }
 
 .about-low-area .about-img {
@@ -238,10 +275,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -50px;
 }
 
-
-
-
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .about-low-area .about-img .about-font-img {
         position: unset
@@ -251,10 +284,11 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .about-low-area .about-img .about-font-img {
         position: unset;
-         display: none;
+        display: none;
     }
-    .about-row{
-    margin-bottom: 50px;
+
+    .about-row {
+        margin-bottom: 50px;
     }
 }
 
@@ -264,7 +298,8 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
 
     }
-    .btn{
+
+    .btn {
         margin-bottom: 50px;
     }
 }
@@ -272,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 575px) {
     .about-low-area .about-img .about-font-img img {
         width: 100%;
-       
+
     }
 }
 
@@ -294,5 +329,4 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 35px
     }
 }
-    
 </style>

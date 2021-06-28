@@ -2,6 +2,7 @@
 <!-- services start here-->
 <div> 
     <Header/>
+    <Servicehero/>
     <div class="categories-area section-padding30">
         <div class="container">
             <div class="row">
@@ -77,6 +78,7 @@
     <!-- services end here-->
 </template>
 <script>
+import Servicehero from "./servicehero.vue"
 import Header from '../Header/Header.vue'
 import Footer from '../Footer/Footer.vue'
 export default {
@@ -87,7 +89,8 @@ export default {
     },
     components:{
         Header,
-        Footer
+        Footer,
+        Servicehero
     }
     
 }

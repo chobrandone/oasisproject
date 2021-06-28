@@ -2,10 +2,11 @@
 <!--? Blog Area Start -->
 
 <div class="">
-    <div class="mb-5">
+    <div class="">
 
         <Head />
     </div>
+    <Bloghero/>
 
     <main>
 
@@ -372,6 +373,7 @@
 </template>
 
 <script>
+import Bloghero from "./bloghero.vue"
 import Head from "../Header/Header.vue";
 import Footer from "../Footer/Footer.vue"
 // import image from "../../assets/img/post/"
@@ -385,7 +387,9 @@ export default {
     components: {
         Head,
 
-        Footer
+        Footer,
+
+    Bloghero
 
     },
 }
