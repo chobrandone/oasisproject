@@ -918,8 +918,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.section-tittle h2 {
-
+.section-tittle  .about-header h2 {
+    font-size: 40px;
     display: block;
     font-weight: 600;
     text-transform: capitalize;
@@ -978,7 +978,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     right: 47px;
     top: 0px;
-    height: 700px;
+    height: 600px;
     width: 400px;
     margin-top: -50px;
 }
@@ -1150,7 +1150,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-area .single-team .team-img img {
-    width: 100%
+    width: 100%;
+    height: 400px;
 }
 
 .team-area .single-team .team-caption {
