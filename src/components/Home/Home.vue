@@ -48,7 +48,7 @@
                                         <b-nav-item href="#about" class="link">About</b-nav-item>
                                         <b-nav-item href="#service" class="link">Services</b-nav-item>
                                         <b-nav-item href="#blog" class="link">Blog</b-nav-item>
-                                        <b-nav-item href="#contact" class="link">Contact</b-nav-item>
+                                        <b-nav-item  @click="contact" class="link">Contact</b-nav-item>
                                         <!-- Header-btn -->
                                         <div class="header-right-btn d-lg-block ml-20 ">
                                             <a @click="download" class="btn header-btn">Get Oasis App</a>
@@ -267,8 +267,8 @@
         </div>
         <!-- contact-form end -->
     </section>
-    <section id="team">
-      <div class="team-area section-padding30">
+    <section id="team" class="team-margin" >
+      <div class="team-area section-padding30 ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="cl-xl-7 col-lg-8 col-md-10">
@@ -280,7 +280,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
                             <img src="../../assets/img/team/team1.png" alt="">
@@ -300,13 +300,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+               
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
-                            <img src="../../assets/img/team/team2.png" alt="">
+                            <img src="../../assets/img/team/team3.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mr. IMO JOSEPH</a></h3>
-                                <p>Dirctor Of Operations</p>
+                                <h3><a href="#">Mrs. Joy Obot</a></h3>
+                                <p>Secretary General</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -320,13 +321,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                 <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
-                            <img src="../../assets/img/team/team3.png" alt="">
+                            <img src="../../assets/img/team/team4.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mrs. JOY OBOT</a></h3>
-                                <p>Sectary General</p>
+                                <h3><a href="#">Mrs Faith Babalola</a></h3>
+                                <p> MANAGING Director </p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="../../assets/img/team/team2.png" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Mr. Imo Joseph</a></h3>
+                                <p> Director Of Operation </p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
