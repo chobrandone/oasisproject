@@ -543,9 +543,7 @@ export default {
     margin: 0;
     padding: 20px;
 
-    &:first-child {
-        border-color: transparent;
-    }
+   
 }
 
 .form-control {
