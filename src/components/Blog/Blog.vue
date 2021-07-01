@@ -51,7 +51,7 @@
                                         </ul>
                                         <h3 class="text-left"><a @click="blog"> Adressing People in Conference</a></h3>
                                     </div>
-                                    <div>
+                                    <div class="mb-3">
                                         <b-button v-b-toggle.collapse-1 class="toggle-btn"> Read More</b-button>
                                         <b-collapse id="collapse-1" class="mt-2">
                                             <b-card>
@@ -85,7 +85,7 @@
                                         <h3 class="text-left"><a @click="blog"> Explaining The OASIS APP</a></h3>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="mb-3">
                                     <b-button v-b-toggle.collapse-1 class="toggle-btn">Read More</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
@@ -117,7 +117,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div class="mb-3">
                                 <b-button v-b-toggle.collapse-1 class="toggle-btn">Read More</b-button>
                                 <b-collapse id="collapse-1" class="mt-2">
                                     <b-card>
