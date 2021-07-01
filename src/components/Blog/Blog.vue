@@ -6,12 +6,130 @@
 
         <Head />
     </div>
-    <Bloghero/>
+    <Bloghero />
 
     <main>
 
+        <section id="blog ">
+            <!--? Blog Area Start -->
+            <div class="home-blog-area mt-5">
+                <div class="container">
+                    <!-- Section Tittle -->
+                    <div class="row mb-3">
+                        <div class="d-flex justify-content-end text-right h-100">
+                            <div class="searchbar">
+                                <input class="search_input" type="text" name="" placeholder="Search...">
+                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="home-blog-single mb-30">
+                                <div class="blog-img-cap">
+                                    <div class="blog-img">
+                                        <img src="../../assets/img/blog/blog1.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-caption">
+                                    <div class="blog-date text-center">
+                                        <span>27</span>
+                                        <p>SEP</p>
+                                    </div>
+                                    <div class="blog-cap text-left">
+                                        <ul>
+                                            <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
+                                            <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
+                                        </ul>
+                                        <h3 class="text-left"><a @click="blog"> Adressing People in Conference</a></h3>
+                                    </div>
+                                    <div>
+                                        <b-button v-b-toggle.collapse-1 class="toggle-btn"> Read More</b-button>
+                                        <b-collapse id="collapse-1" class="mt-2">
+                                            <b-card>
+                                                <p class="card-text"> you areall welcome to our blog</p>
+
+                                            </b-card>
+                                        </b-collapse>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="home-blog-single mb-30">
+                                <div class="blog-img-cap">
+                                    <div class="blog-img">
+                                        <img src="../../assets/img/blog/blog2.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-caption">
+                                    <div class="blog-date text-center">
+                                        <span>06</span>
+                                        <p>JUNE</p>
+                                    </div>
+                                    <div class="blog-cap text-left">
+                                        <ul>
+                                            <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
+                                            <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
+                                        </ul>
+                                        <h3 class="text-left"><a @click="blog"> Explaining The OASIS APP</a></h3>
+                                    </div>
+                                </div>
+                                <div>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">Read More</b-button>
+                                    <b-collapse id="collapse-1" class="mt-2">
+                                        <b-card>
+                                            <p class="card-text"> you areall welcome to our blog</p>
+
+                                        </b-card>
+                                    </b-collapse>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="home-blog-single mb-30">
+                                <div class="blog-img-cap">
+                                    <div class="blog-img">
+                                        <img src="../../assets/img/blog/blog6.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-caption">
+                                    <div class="blog-date text-center">
+                                        <span>25</span>
+                                        <p>AUG</p>
+                                    </div>
+                                    <div class="blog-cap text-left">
+                                        <ul>
+                                            <li><a href="#"><i class="ti-user"></i> Secretary General</a></li>
+                                            <li><a href="#"><i class="ti-comment-alt"> </i> 12</a></li>
+                                        </ul>
+                                        <h3 class="text-left"><a @click="blog">Managing the App Demand</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <b-button v-b-toggle.collapse-1 class="toggle-btn">Read More</b-button>
+                                <b-collapse id="collapse-1" class="mt-2">
+                                    <b-card>
+                                        <p class="card-text"> you areall welcome to our blog</p>
+
+                                    </b-card>
+                                </b-collapse>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Area End -->
+        </section>
+
         <!--================Blog Area =================-->
-        <section class="blog_area section-padding">
+        <!-- <section class="blog_area section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mb-5 mb-lg-0">
@@ -180,7 +298,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            
+
                             </nav>
                         </div>
                     </div>
@@ -361,10 +479,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================Blog Area =================-->
     </main>
-    <div>
+    <div class="mt-5">
         <Footer />
     </div>
 
@@ -389,20 +507,66 @@ export default {
 
         Footer,
 
-    Bloghero
+        Bloghero
 
     },
 }
 </script>
 
 <style scoped>
-.toggle-btn{
-    background:#f15f22 ;
+ .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #EDC750;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+.toggle-btn {
+    background: #f15f22;
     border: 0px;
+    border-radius: 25px;
 }
-.toggle-btn:hover{
-    background:#EDC750 ;
+
+.toggle-btn:hover {
+    background: #EDC750;
 }
+
 .boxed-btn {
     background: #fff;
     color: #f15f22 !important;
@@ -420,6 +584,7 @@ export default {
     cursor: pointer;
 }
 
+/* 
 .boxed-btn:hover {
     background: #f15f22;
     color: #fff !important;
@@ -1229,5 +1394,5 @@ export default {
 
 .single-post-area .blog-author h4 {
     font-size: 16px
-}
+} */
 </style>

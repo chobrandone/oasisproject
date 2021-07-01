@@ -49,6 +49,7 @@
                                         <b-nav-item href="#service" class="link">Services</b-nav-item>
                                         <b-nav-item href="#blog" class="link">Blog</b-nav-item>
                                         <b-nav-item  @click="contact" class="link">Contact</b-nav-item>
+                                        <b-nav-item  @click="gallery" class="link">Gallery</b-nav-item>
                                         <!-- Header-btn -->
                                         <div class="header-right-btn d-lg-block ml-20 ">
                                             <a @click="download" class="btn header-btn">Get Oasis App</a>
@@ -776,6 +777,11 @@ export default {
          team: function () {
             this.$router.push({
                 path: "/team",
+            });
+        },
+           gallery: function () {
+            this.$router.push({
+                path: "/gallery",
             });
         },
     },
