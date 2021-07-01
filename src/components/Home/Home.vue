@@ -235,34 +235,70 @@
 
         <!--? contact-form start -->
         <div class=" contact-form">
-            <div class="container">
+            <div v-if="!submitted" class="container">
                 <form method="post" class="contactbg">
                     <h3>Drop Us a Message</h3>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtName" class="form-control inputs" placeholder="Your Name *" value="" />
+                                <input 
+                                type="text" 
+                                name="name" 
+                                id="name"
+                                v-model="sendMessage.name"
+                                class="form-control inputs" 
+                                placeholder="Your Name *" 
+                                value="" />
                             </div>
                             <div class="form-group">
-                                <input type="text" name="txtEmail" class="form-control inputs" placeholder="Your Email *" value="" />
+                                <input 
+                                type="text" 
+                                name="email" 
+                                id="email"
+                                v-model="sendMessage.email"
+                                class="form-control inputs" 
+                                placeholder="Your Email *" 
+                                value="" />
                             </div>
                             <div class="form-group">
-                                <input type="text" name="txtPhone" class="form-control inputs" placeholder="Your Phone Number *" value="" />
+                                <input 
+                                type="number" 
+                                name="phone"
+                                id="phone"
+                                v-model="sendMessage.phone" 
+                                class="form-control inputs" 
+                                placeholder="Your Phone Number *" 
+                                value="" />
                             </div>
 
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                <textarea 
+                                name="txtMsg"
+                                id="message"
+                                v-model="sendMessage.message"
+                                class="form-control" 
+                                placeholder="Your Message *" 
+                                style="width: 100%; height: 150px;"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group buton">
-                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        <input 
+                        @click="saveMessage"
+                        type="submit" 
+                        name="btnSubmit" 
+                        class="btnContact" 
+                        value="Send Message" />
                     </div>
                 </form>
             </div>
+            <div v-else>
+      <h4>You submitted successfully!</h4>
+      <button class="btn btn-success" @click="newTutorial">Send Message</button>
+    </div>
 
         </div>
         <!-- contact-form end -->
@@ -409,7 +445,12 @@
                     <div class="col-xl-4 col-lg-5 col-md-8">
                         <div class="testimonial-form text-center">
                             <h3>Subscribe To App.</h3>
-                            <input type="text" placeholder="Email">
+                            <input 
+                             type="text"
+                             id="email"
+                             required
+                             placeholder="Email"
+                              >
                             <button name="submit" class="submit-btn">Request App</button>
                         </div>
                     </div>
@@ -637,6 +678,7 @@
 // import Contact from "../Contact/Contact.vue"
 // import Footer from "../Footer/Footer.vue"
 // import style from "../../assets/css/style.css"
+import messageUrl from '../../services/api'
 export default {
     name: "Home",
     components: {
@@ -655,9 +697,52 @@ export default {
     },
     data() {
         return {
-        }
-    },
+                sendMessage: {
+                   name: '',
+                   email: '',
+                   phone: '',
+                   message:''
+                },
+                submitted: false
+            };
+        },
+        
     methods: {
+         saveMessage () {
+                var data = {
+                    name: this.sendMessage.name,
+                    email: this.sendMessage.email,
+                    phone: this.sendMessage.phone,
+                    message: this.sendMessage.message
+                };
+                this.apiURL.create(data).then(response => {
+                    this.sendMessage.id = response.data.id;
+                    console.log(response.data);
+                    this.submitted = true; 
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+            },
+            newMessage(){
+                this.submitted = false;
+                this.sendMessage = {};
+            }, 
+            handleSubmitForm() {
+                let apiURL = messageUrl`/api/contact`;
+                
+                this.axios.post(apiURL, this.sendMessage).then(() => {
+                  this.$router.push('/view')
+                  this.student = {
+                    name: '',
+                    email: '',
+                    phone: '',
+                    message:''
+                  }
+                }).catch(error => {
+                    console.log(error)
+                });
+            },
         home: function () {
             this.$router.push({
                 path: "/",
@@ -699,4 +784,4 @@ export default {
 
 <style>
 @import url("../../assets/css/style.css");
-</style>
+</style> 
