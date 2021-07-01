@@ -47,18 +47,18 @@
                                         <span>27</span>
                                         <p>SEP</p>
                                     </div>
-                                    <div class="blog-cap text-left">
+                                    <div class="blog-cap text-center">
                                         <ul>
                                             <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
                                             <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                         </ul>
-                                        <h3 class="text-left"><a @click="blog"> Adressing People in Conference</a></h3>
+                                        <h3 class="text-center"><a @click="blog"> Adressing People in Conference</a></h3>
                                     </div>
                                     <div class="mb-3">
                                         <b-button v-b-toggle.collapse-1 class="toggle-btn togle"> Read More</b-button>
                                         <b-collapse id="collapse-1" class="mt-2">
                                             <b-card>
-                                                <p class="card-text"> you areall welcome to our blog</p>
+                                                <p class="card-text"> you are all welcome to our blog</p>
 
                                             </b-card>
                                         </b-collapse>
@@ -85,14 +85,14 @@
                                             <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
                                             <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                         </ul>
-                                        <h3 class="text-left"><a @click="blog"> Explaining The OASIS APP</a></h3>
+                                        <h3 class="text-center"><a @click="blog"> Explaining The OASIS APP</a></h3>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
-                                            <p class="card-text"> you areall welcome to our blog</p>
+                                            <p class="card-text"> you ar eall welcome to our blog</p>
 
                                         </b-card>
                                     </b-collapse>
@@ -116,7 +116,7 @@
                                             <li><a href="#"><i class="ti-user"></i> Secretary General</a></li>
                                             <li><a href="#"><i class="ti-comment-alt"> </i> 12</a></li>
                                         </ul>
-                                        <h3 class="text-left"><a @click="blog">Managing the App Demand</a></h3>
+                                        <h3 class="text-center"><a @click="blog">Managing the App Demand</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                                 <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
                                 <b-collapse id="collapse-1" class="mt-2">
                                     <b-card>
-                                        <p class="card-text"> you areall welcome to our blog</p>
+                                        <p class="card-text"> you are all welcome to our blog</p>
 
                                     </b-card>
                                 </b-collapse>
