@@ -52,7 +52,7 @@
                                         <h3 class="text-left"><a @click="blog"> Adressing People in Conference</a></h3>
                                     </div>
                                     <div class="mb-3">
-                                        <b-button v-b-toggle.collapse-1 class="toggle-btn"> Read More</b-button>
+                                        <b-button v-b-toggle.collapse-1 class="toggle-btn togle"> Read More</b-button>
                                         <b-collapse id="collapse-1" class="mt-2">
                                             <b-card>
                                                 <p class="card-text"> you areall welcome to our blog</p>
@@ -77,7 +77,7 @@
                                         <span>06</span>
                                         <p>JUNE</p>
                                     </div>
-                                    <div class="blog-cap text-left">
+                                    <div class="blog-cap text-center">
                                         <ul>
                                             <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
                                             <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
@@ -86,7 +86,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">Read More</b-button>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
                                             <p class="card-text"> you areall welcome to our blog</p>
@@ -108,7 +108,7 @@
                                         <span>25</span>
                                         <p>AUG</p>
                                     </div>
-                                    <div class="blog-cap text-left">
+                                    <div class="blog-cap text-center">
                                         <ul>
                                             <li><a href="#"><i class="ti-user"></i> Secretary General</a></li>
                                             <li><a href="#"><i class="ti-comment-alt"> </i> 12</a></li>
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn">Read More</b-button>
+                                <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
                                 <b-collapse id="collapse-1" class="mt-2">
                                     <b-card>
                                         <p class="card-text"> you areall welcome to our blog</p>
@@ -522,6 +522,23 @@ export default {
 </script>
 
 <style scoped>
+.togle{
+    border-radius: 25px;
+       background: #EDC750;
+    color: white !important;
+    display: inline-block;
+   
+  
+    font-size: 14px;
+    font-weight: 400;
+   
+    border: 1px solid #EDC750;
+    
+    text-align: center;
+  
+    text-transform: uppercase;
+    cursor: pointer;
+}
 .form-group {
     margin: 0;
     padding: 20px;
@@ -571,8 +588,9 @@ export default {
 
 toggle-btn {
     background: #f15f22;
-    border: 0px;
-    border-radius: 25px;
+   
+    border-radius: 25px !important;
+    
 }
 
 .toggle-btn:hover {
