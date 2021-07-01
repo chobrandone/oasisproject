@@ -15,13 +15,21 @@
             <div class="home-blog-area mt-5">
                 <div class="container">
                     <!-- Section Tittle -->
-                    <div class="row mb-3">
-                        <div class="d-flex justify-content-end text-right h-100">
-                            <div class="searchbar">
-                                <input class="search_input" type="text" name="" placeholder="Search...">
-                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-                            </div>
+                    <div class="row mb-5">
+                        <!-- Custom rounded search bars with input group -->
+                        <div class="col-xs-10 col-xs-offset-1 mr-2 ml-2 ">
+                            <form action="#" method="#" role="search">
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="Search . . ." name="srch-term" id="ed-srch-term" type="text">
+                                    <div class="input-group-btn">
+                                        <button type="submit" id="searchbtn">
+                                            search</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
+
+                        <!-- End -->
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -514,50 +522,54 @@ export default {
 </script>
 
 <style scoped>
- .searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 60px;
-    background-color: #EDC750;
-    border-radius: 30px;
-    padding: 10px;
-    }
+.form-group {
+    margin: 0;
+    padding: 20px;
 
-    .search_input{
-    color: white;
+    &:first-child {
+        border-color: transparent;
+    }
+}
+
+.form-control {
+    padding: 0px 10px 0 20px;
+    margin-top: 10px;
+    color: #EDC750;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #EDC750;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height: 40px;
+    height: 30px;
+    border-radius: 50px 0 0 50px !important;
+}
+
+.form-control :focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: transparent;
+
+}
+
+#searchbtn {
     border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
+    padding: 0px 10px;
+    margin-top: 10px;
+    color: #fff;
+    background: #EDC750;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #EDC750;
+    border-left: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height: 40px;
+    height: 30px;
+    border-radius: 0 50px 50px 0 !important;
+}
 
-    .searchbar:hover > .search_input{
-    padding: 0 10px;
-    width: 450px;
-    caret-color:red;
-    transition: width 0.4s linear;
-    }
-
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: #e74c3c;
-    }
-
-    .search_icon{
-    height: 40px;
-    width: 40px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:white;
-    text-decoration:none;
-    }
-.toggle-btn {
+toggle-btn {
     background: #f15f22;
     border: 0px;
     border-radius: 25px;

@@ -6,7 +6,7 @@
 
         <Head />
     </div>
-    <div class="gallery mb-5">    <Galleryhero/></div>
+    <div class=" mb-5">    <Galleryhero/></div>
 
 
 
@@ -108,7 +108,7 @@
 
 <script>
 import Head from "../Header/Header.vue";
-import Footer from "../Footer/Footer.vue"
+import Footer from "../Footer/Footer.vue";
 import Galleryhero from "./galleryhero.vue"
 // import VueGallerySlideshow from "../../assets/js/vue-gallery-slideshow.min.js"
 // import blog from "../../assets/img/blog/single_blog_5.png"
