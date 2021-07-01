@@ -254,7 +254,7 @@
         <!--? contact-form start -->
         <div class=" contact-form">
             <div v-if="!submitted" class="container">
-                <form method="post" class="contactbg">
+                <form class="contactbg">
                     <h3>Drop Us a Message</h3>
                     <div class="row">
                         <div class="col-md-6">
@@ -263,7 +263,7 @@
                                 type="text" 
                                 name="name" 
                                 id="name"
-                                v-model="sendMessage.name"
+                                v-model="name"
                                 class="form-control inputs" 
                                 placeholder="Your Name *" 
                                 value="" />
@@ -271,9 +271,9 @@
                             <div class="form-group">
                                 <input 
                                 type="text" 
-                                name="email" 
-                                id="email"
-                                v-model="sendMessage.email"
+                                name="emailId" 
+                                id="emailId"
+                                v-model="email"
                                 class="form-control inputs" 
                                 placeholder="Your Email *" 
                                 value="" />
@@ -283,7 +283,7 @@
                                 type="number" 
                                 name="phone"
                                 id="phone"
-                                v-model="sendMessage.phone" 
+                                v-model="phone" 
                                 class="form-control inputs" 
                                 placeholder="Your Phone Number *" 
                                 value="" />
@@ -293,23 +293,27 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <textarea 
-                                name="txtMsg"
+                                name="message"
                                 id="message"
-                                v-model="sendMessage.message"
+                                v-model="message"
                                 class="form-control" 
                                 placeholder="Your Message *" 
-                                style="width: 100%; height: 150px;"></textarea>
+                                style="width: 100%; height: 150px;"
+                                required 
+                                >
+                                </textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group buton">
-                        <input 
-                        @click="saveMessage"
+                        <button 
                         type="submit" 
                         name="btnSubmit" 
-                        class="btnContact" 
-                        value="Send Message" />
+                        @click.prevent="handleSubmitForm()"
+                        class="btnContact"> 
+                       Send Message 
+                       </button>
                     </div>
                 </form>
             </div>
@@ -444,7 +448,6 @@
                             <h3>Subscribe To App.</h3>
                             <input 
                              type="text"
-                             id="email"
                              required
                              placeholder="Email"
                               >
@@ -675,71 +678,79 @@
 // import Contact from "../Contact/Contact.vue"
 // import Footer from "../Footer/Footer.vue"
 // import style from "../../assets/css/style.css"
-import messageUrl from '../../services/api'
+//import ContactApi from '../../services/contact.service'
+import axios from "axios";
 export default {
     name: "Home",
     components: {
-        // Head,
-        // Navigation,
-        // Hero,
-        // Program,
-        // OurServices,
-        // About,
-        // Team,
-        // Showcase,
-        // Testimonials,
-        // Blog,
-        // Contact,
-        // Footer
     },
     data() {
         return {
-                sendMessage: {
+            baseUrl: process.env.baseUrl,
+            emailFrom: process.env.smtpFrom,
+            emailTo: process.env.smtpTo,
+            dataAvailable: false,
+                sendMessage: {},
                    name: '',
                    email: '',
                    phone: '',
-                   message:''
-                },
+                   message:'',
+                
                 submitted: false
             };
         },
         
     methods: {
-         saveMessage () {
-                var data = {
-                    name: this.sendMessage.name,
-                    email: this.sendMessage.email,
-                    phone: this.sendMessage.phone,
-                    message: this.sendMessage.message
-                };
-                this.apiURL.create(data).then(response => {
-                    this.sendMessage.id = response.data.id;
-                    console.log(response.data);
-                    this.submitted = true; 
-                })
-                .catch(e => {
-                    console.log(e);
-                });
-            },
+        //  saveMessage () {
+        //         var data = {
+        //             name: this.sendMessage.name,
+        //             email: this.sendMessage.email,
+        //             phone: this.sendMessage.phone,
+        //             message: this.sendMessage.message
+        //         };
+        //         messageUrl.create(data).then(response => {
+        //             this.sendMessage.id = response.data.id;
+        //             console.log(response.data);
+        //             this.submitted = true; 
+        //         })
+        //         .catch(e => {
+        //             console.log(e);
+        //         });
+        //     },
             newMessage(){
                 this.submitted = false;
                 this.sendMessage = {};
             }, 
             handleSubmitForm() {
-                let apiURL = messageUrl`/api/contact`;
-                
-                this.axios.post(apiURL, this.sendMessage).then(() => {
-                  this.$router.push('/view')
-                  this.student = {
-                    name: '',
-                    email: '',
-                    phone: '',
-                    message:''
-                  }
-                }).catch(error => {
+                axios.post({
+                    apiURL: 'https://oasis-planet-server.herokuapp.com/api/contact/create',
+                    method: "POST",
+                    headers: {
+                        accept: "application/json",
+                        "content-type": "application/json",
+                    },
+                    sendMessage: {
+                         updateEnabled: true,
+                        email: this.email,
+                        attributes: {
+                            firstname: this.name,
+                            telephone: this.phone,
+                            address: this.address,
+                            message: this.message
+                    }.then(result =>{
+                        this.name = "";
+                        this.email = "";
+                        this.phone = "";
+                        this.message  = "";
+                        window.location.href = '/thank-you'
+                        console.log(result)
+                    })
+                  .catch(error => {
                     console.log(error)
-                });
-            },
+                }),
+                }
+            })
+             },
         home: function () {
             this.$router.push({
                 path: "/",

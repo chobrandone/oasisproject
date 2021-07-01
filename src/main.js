@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import http from 'http'
 // import router from './router' 
 // import Embed from 'v-video-embed'
 import VueRouter from 'vue-router'
@@ -25,6 +26,7 @@ const router= new VueRouter({
 })
 // global register
 // Vue.use(Embed);
+Vue.prototype.$http = http
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)
 Vue.config.productionTip = false
