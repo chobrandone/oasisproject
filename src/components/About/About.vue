@@ -71,8 +71,8 @@ export default {
     margin-top: 100px;
 }
 
-.main-abouts {
-    margin-top: 10px;
+.main-about {
+    margin-top: 30px;
 }
 
 .latest_blog_area {

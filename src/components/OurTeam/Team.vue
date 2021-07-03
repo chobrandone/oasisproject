@@ -34,26 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="../../assets/img/team/team2.png" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mr. IMO JOSEPH</a></h3>
-                                <p>Dirctor Of Operations</p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
@@ -81,6 +62,26 @@
                             <div class="team-caption">
                                 <h3><a href="#">Mrs. FAITH BABALOLA</a></h3>
                                 <p>Managing Director</p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="../../assets/img/team/team2.png" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Mr. IMO JOSEPH</a></h3>
+                                <p>Dirctor Of Operations</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
