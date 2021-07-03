@@ -252,8 +252,8 @@
     <section id="contact">
 
         <!--? contact-form start -->
-        <div class=" contact-form">
-            <div v-if="!submitted" class="container">
+        <div class="contact-form">
+            <div class="container">
                 <form class="contactbg">
                     <h3>Drop Us a Message</h3>
                     <div class="row">
@@ -310,17 +310,14 @@
                         <button 
                         type="submit" 
                         name="btnSubmit" 
-                        @click.prevent="handleSubmitForm()"
+                        @click.prevent="contactForm()"
                         class="btnContact"> 
                        Send Message 
                        </button>
                     </div>
                 </form>
             </div>
-            <div v-else>
-      <h4>You submitted successfully!</h4>
-      <button class="btn btn-success" @click="newTutorial">Send Message</button>
-    </div>
+           
 
         </div>
         <!-- contact-form end -->
@@ -680,7 +677,11 @@
 // import style from "../../assets/css/style.css"
 //import ContactApi from '../../services/contact.service'
 import axios from "axios";
+import BlogDataService from "../../services/blog.service";
+import ContactDataService from "../../services/contact.service";
 export default {
+     /*** Blog integration */
+    /*** Contact us integration */
     name: "Home",
     components: {
     },
@@ -690,67 +691,109 @@ export default {
             emailFrom: process.env.smtpFrom,
             emailTo: process.env.smtpTo,
             dataAvailable: false,
-                sendMessage: {},
+                sendMessage: {
                    name: '',
                    email: '',
                    phone: '',
                    message:'',
+                },
+                submitted: false,
+
+                blogPost:[],
+                currentPost: null,
+                currentIndex: -1,
+                PostTitle: "",
+                postAuthor: '',
+                postDesc: "",
+                postContent: "",
+                postImgUrl: ""
                 
-                submitted: false
             };
         },
         
     methods: {
-        //  saveMessage () {
-        //         var data = {
-        //             name: this.sendMessage.name,
-        //             email: this.sendMessage.email,
-        //             phone: this.sendMessage.phone,
-        //             message: this.sendMessage.message
-        //         };
-        //         messageUrl.create(data).then(response => {
-        //             this.sendMessage.id = response.data.id;
-        //             console.log(response.data);
-        //             this.submitted = true; 
-        //         })
-        //         .catch(e => {
-        //             console.log(e);
-        //         });
-        //     },
-            newMessage(){
-                this.submitted = false;
-                this.sendMessage = {};
-            }, 
-            handleSubmitForm() {
-                axios.post({
-                    apiURL: 'https://oasis-planet-server.herokuapp.com/api/contact/create',
-                    method: "POST",
-                    headers: {
-                        accept: "application/json",
-                        "content-type": "application/json",
-                    },
-                    sendMessage: {
-                         updateEnabled: true,
-                        email: this.email,
-                        attributes: {
-                            firstname: this.name,
-                            telephone: this.phone,
-                            address: this.address,
-                            message: this.message
-                    }.then(result =>{
-                        this.name = "";
-                        this.email = "";
-                        this.phone = "";
-                        this.message  = "";
-                        window.location.href = '/thank-you'
-                        console.log(result)
+
+            retrievePost() {
+                BlogDataService.getAll()
+                    .then(response => {
+                    this.blogPost = response.data;
+                    console.log(response.data);
                     })
-                  .catch(error => {
-                    console.log(error)
-                }),
+                    .catch(e => {
+                    console.log(e);
+                    });
+                },
+            refreshList() {
+                    this.retrievePost();
+                    this.currentPost = null;
+                    this.currentIndex = -1;
+            },
+            removeAllPost() {
+                BlogDataService.deleteAll()
+                    .then(response => {
+                    console.log(response.data);
+                    
+                    this.refreshList();
+                    })
+                    .catch(e => {
+                    console.log(e);
+                    });
+                },
+
+                /**contact method start */
+            saveContact() {
+                var data = {
+                    name: this.sendMessage.name,
+                    phone: this.sendMessage.phone,
+                    email: this.sendMessage.email,
+                    message: this.sendMessage.message
                 }
-            })
-             },
+            
+               ContactDataService.create(data)
+                .then(response => {
+                this.sendMessage.id = response.data.id;
+                console.log(response.data);
+                this.submitted = true;
+                })
+                .catch(e => {
+                console.log(e);
+                });
+                },
+            newTutorial() {
+                this.submitted = false;
+                this.tutorial = {};
+            },
+             
+             send() {
+            let msg = `<strong>From:</strong> ${this.name} - ${this.email}<br/>`;
+            msg += `<strong>Phone number:</strong> ${this.phone} <br/>`;
+            msg += `<strong>Message:</strong><br/> ${this.message}`;
+            this.$toasted.show("Sending message...");
+            axios
+        .post("/mail/send", {
+          from: `Oasis Planet Tech <${this.emailFrom}>`,
+          sender: this.email,
+          replyTo: this.email,
+          subject: "Contact form message",
+          text: msg,
+          html: msg,
+          to: this.emailTo
+        })
+        .then(result => {
+          this.email = "";
+          this.username = "";
+          this.phone = "";
+          this.message = "";
+          console.log(result)
+          //this.$toasted.show("Meassage sent. We would get to you soonest");
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+
+    /**contact method start */
+
         home: function () {
             this.$router.push({
                 path: "/",
@@ -759,6 +802,11 @@ export default {
         blog: function () {
             this.$router.push({
                 path: "/blog",
+            });
+        },
+        singlePost: function () {
+            this.$router.push({
+                path: "/blog/:id",
             });
         },
         contact: function () {
@@ -787,6 +835,9 @@ export default {
             });
         },
     },
+    mounted() {
+    this.retrievePost();
+  }
 }
 </script>
 

@@ -1,6 +1,7 @@
 
 import Home from '../components/Home/Home.vue'
 import Blog from '../components/Blog/Blog.vue'
+import BlogHero from '../components/Blog/BlogHero.vue'
 import Contact from '../components/Contact/Contact.vue'
 import Aboutus from '../components/About/About.vue';
 import Download from '../components/Download/Download.vue'
@@ -25,6 +26,11 @@ const routes =[
         path :'/blog',
         name:'Blog',
         component: Blog
+    },
+    {
+        path :'/blog/:id',
+        name:'single-Blog',
+        component: BlogHero
     },
     {
         path :'/about',
