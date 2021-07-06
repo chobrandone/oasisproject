@@ -38,7 +38,7 @@ export default {
     
 .slider-active{
     /* background-image: url(../../assets/img/hero/video.jpg); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/hero/team4.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/img/testimonials/happy2.jpg");
      min-height: 400px;
     background-repeat: no-repeat;
     background-position: center center;
