@@ -37,7 +37,15 @@
                                     <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
+                                            <p class="card-text">To all our highly esteemed customers .
+
+                                                We're deeply sorry for not been able to reach us through our customer line.
+
+                                                We're working hard to provide more customer line and to also ensure creditability .
+
+                                                Thank you so much for your understanding.
+
+                                                Oasis planet Tech ~Competency and intergrity .</p>
 
                                         </b-card>
                                     </b-collapse>
@@ -92,8 +100,8 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                    <b-collapse id="collapse-1" class="mt-2">
+                                    <b-button v-b-toggle.collapse-2 class="toggle-btn">view full content</b-button>
+                                    <b-collapse id="collapse-2" class="mt-2">
                                         <b-card>
                                             <p class="card-text">view full content</p>
 
@@ -121,8 +129,8 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                    <b-collapse id="collapse-1" class="mt-2">
+                                    <b-button v-b-toggle.collapse-3 class="toggle-btn">view full content</b-button>
+                                    <b-collapse id="collapse-3" class="mt-2">
                                         <b-card>
                                             <p class="card-text">view full content</p>
 
@@ -150,8 +158,8 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                    <b-collapse id="collapse-1" class="mt-2">
+                                    <b-button v-b-toggle.collapse-4 class="toggle-btn">view full content</b-button>
+                                    <b-collapse id="collapse-4" class="mt-2">
                                         <b-card>
                                             <p class="card-text">view full content</p>
 
@@ -179,7 +187,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            
+
                             </nav>
                         </div>
                     </div>
@@ -197,153 +205,6 @@
                                     </div>
                                     <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">Search</button>
                                 </form>
-                            </aside>
-
-                            <aside class="single_sidebar_widget post_category_widget">
-                                <h4 class="widget_title">Category</h4>
-                                <ul class="list cat-list">
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Resaurant food</p>
-                                            <p>(37)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Travel news</p>
-                                            <p>(10)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Modern technology</p>
-                                            <p>(03)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Product</p>
-                                            <p>(11)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Inspiration</p>
-                                            <p>21</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Health Care (21)</p>
-                                            <p>09</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </aside>
-
-                            <aside class="single_sidebar_widget popular_post_widget">
-                                <h3 class="widget_title">Recent Post</h3>
-                                <div class="media post_item">
-                                    <img src="../../assets/img/post/post_1.png" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3>From life was you fish...</h3>
-                                        </a>
-                                        <p>January 12, 2019</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../../assets/img/post/post_2.png" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3>The Amazing Hubble</h3>
-                                        </a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../../assets/img/post/post_3.png" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3>Astronomy Or Astrology</h3>
-                                        </a>
-                                        <p>03 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../../assets/img/post/post_4.png" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3>Asteroids telescope</h3>
-                                        </a>
-                                        <p>01 Hours ago</p>
-                                    </div>
-                                </div>
-                            </aside>
-                            <aside class="single_sidebar_widget tag_cloud_widget">
-                                <h4 class="widget_title">Tag Clouds</h4>
-                                <ul class="list">
-                                    <li>
-                                        <a href="#">project</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">love</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">technology</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">restaurant</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">life style</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">design</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">illustration</a>
-                                    </li>
-                                </ul>
-                            </aside>
-
-                            <aside class="single_sidebar_widget instagram_feeds">
-                                <h4 class="widget_title">Instagram Feeds</h4>
-                                <ul class="instagram_row flex-wrap">
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_5.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_6.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_7.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_8.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_9.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_10.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
                             </aside>
 
                             <aside class="single_sidebar_widget newsletter_widget">
@@ -392,13 +253,15 @@ export default {
 </script>
 
 <style scoped>
-.toggle-btn{
-    background:#f15f22 ;
+.toggle-btn {
+    background: #f15f22;
     border: 0px;
 }
-.toggle-btn:hover{
-    background:#EDC750 ;
+
+.toggle-btn:hover {
+    background: #EDC750;
 }
+
 .boxed-btn {
     background: #fff;
     color: #f15f22 !important;
@@ -510,9 +373,11 @@ export default {
 .latest-blog-area .area-heading {
     margin-bottom: 70px
 }
-.blog_area{
+
+.blog_area {
     margin-top: 200px !important;
 }
+
 .blog_area a {
     color: "Josefin Sans", sans-serif !important;
     text-decoration: none;

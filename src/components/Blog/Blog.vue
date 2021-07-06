@@ -10,10 +10,8 @@
 
     <main>
 
-     
-
         <!--================Blog Area =================-->
-           <section id="blog ">
+        <section id="blog ">
             <!--? Blog Area Start -->
             <div class="home-blog-area mt-5">
                 <div class="container">
@@ -55,13 +53,14 @@
                                         <h3 class="text-center"><a @click="blog"> Adressing People in Conference</a></h3>
                                     </div>
                                     <div class="mb-3">
-                                        <b-button v-b-toggle.collapse-1 class="toggle-btn togle"> Read More</b-button>
-                                        <b-collapse id="collapse-1" class="mt-2">
-                                            <b-card>
-                                                <p class="card-text"> you are all welcome to our blog</p>
+                                      <b-button v-b-toggle.my-collapse-1 class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse-1" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
 
-                                            </b-card>
-                                        </b-collapse>
+                                </b-collapse>
                                     </div>
 
                                 </div>
@@ -89,13 +88,15 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
-                                    <b-collapse id="collapse-1" class="mt-2">
-                                        <b-card>
-                                            <p class="card-text"> you ar eall welcome to our blog</p>
+                                   <b-button v-b-toggle.my-collapse-2 class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse-2" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
 
-                                        </b-card>
-                                    </b-collapse>
+                                </b-collapse>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -121,21 +122,40 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text"> you are all welcome to our blog</p>
+                                <b-button v-b-toggle.my-collapse class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
 
-                                    </b-card>
                                 </b-collapse>
                             </div>
                         </div>
+                        
                     </div>
                     <div>
 
                     </div>
                 </div>
             </div>
+
+         
+
+          <div class="search-wrapper">
+    <input type="text" v-model="search" placeholder="Search title.."/>
+        <label>Search title:</label>
+  </div>
+  <div class="wrapper">
+    <div class="card" v-for="post in filteredList">
+      <a v-bind:href="post.link" target="_blank">
+        <img v-bind:src="post.img"/>
+        <small>posted by: {{ post.author }}</small>
+        {{ post.title }}
+      </a>
+    </div>
+  </div>
+
             <!-- Blog Area End -->
         </section>
         <!--================Blog Area =================-->
@@ -172,28 +192,42 @@ export default {
 </script>
 
 <style scoped>
-.togle{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.togle {
     border-radius: 25px;
-       background: #EDC750;
+    background: #EDC750;
     color: white !important;
     display: inline-block;
-   
-  
+
     font-size: 14px;
     font-weight: 400;
-   
+
     border: 1px solid #EDC750;
-    
+
     text-align: center;
-  
+
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .form-group {
     margin: 0;
     padding: 20px;
 
-   
 }
 
 .form-control {
@@ -236,9 +270,9 @@ export default {
 
 toggle-btn {
     background: #f15f22;
-   
+
     border-radius: 25px !important;
-    
+
 }
 
 .toggle-btn:hover {
@@ -261,6 +295,4 @@ toggle-btn {
     text-transform: uppercase;
     cursor: pointer;
 }
-
-
 </style>
