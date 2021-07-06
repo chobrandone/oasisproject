@@ -8,11 +8,11 @@
                 <div class="header-top d-none d-lg-block">
                     <div class="container">
                         <div class="col-xl-12">
-                            <div class="row d-flex justify-content-between align-items-center">
+                            <div class="row d-flex justify-content-between align-items-center row-head">
                                 <div class="header-info-left">
                                     <ul>
                                         <li>Phone: +234 813 597 9932</li>
-                                        <li>Email: oasisplanettech21@gmail.com</li>
+                                        <li>Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">oasisplanettech21@gmail.com</a> </li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
@@ -20,10 +20,10 @@
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
-                                      
+
                                         <li> <a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
                                         <li> <a href="https://www.youtube.com/channel/UCoewA9dAUWXFFGZIDsEJTvw"><i class="fab fa-youtube"></i></a></li>
-                                        
+
                                     </ul>
                                 </div>
                             </div>
@@ -48,9 +48,10 @@
                                         <b-nav-item href="#about" class="link">About</b-nav-item>
                                         <b-nav-item href="#service" class="link">Services</b-nav-item>
                                         <b-nav-item href="#blog" class="link">Blog</b-nav-item>
-                                        <b-nav-item href="#contact" class="link">Contact</b-nav-item>
+                                        <b-nav-item @click="contact" class="link">Contact</b-nav-item>
+                                        <b-nav-item @click="gallery" class="link">Gallery</b-nav-item>
                                         <!-- Header-btn -->
-                                        <div class="header-right-btn d-none d-lg-block ml-20 text-left ">
+                                        <div class="header-right-btn d-lg-block ml-20 ">
                                             <a @click="download" class="btn header-btn">Get Oasis App</a>
                                         </div>
                                     </b-navbar-nav>
@@ -162,13 +163,7 @@
                             <div class="cat-cap">
                                 <h5><a>Digital Marketing</a></h5>
                                 <p>Oasis Planet Tech is a Digital Marketing platform with vision in revolutionizing and digitalizing the marketing world with new and advanced features.</p>
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
 
-                                    </b-card>
-                                </b-collapse>
                             </div>
                         </div>
                     </div>
@@ -180,13 +175,7 @@
                             <div class="cat-cap">
                                 <h5><a>Network Marketing</a></h5>
                                 <p>Through the oasis planet tech has a mobile app where person accross the globe can earn money independently by doing various tasks on the app.</p>
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
 
-                                    </b-card>
-                                </b-collapse>
                             </div>
                         </div>
                     </div>
@@ -199,13 +188,6 @@
                                 <h5><a href="services.html">Trade And Earn</a></h5>
                                 <p>the era of 'bring 2" before you earn is over, With Oasis Planet Tech you can Earn money by simply watching videos and get paid directly with UBA.</p>
 
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
-
-                                    </b-card>
-                                </b-collapse>
                             </div>
                         </div>
                     </div>
@@ -229,7 +211,7 @@
                                 <h2>Oasis Planet Tech is a Corperote organization known for its competency and integrity</h2>
                             </div>
                             <p class="text-left">We aimed at equipping, empowering, training and developing young entrepreneurs with technological skills that will prepare them to start a career.</p>
-                            <p class="text-left">Join the winning team today and unlock the doors to success. Hurry and register with Oasis Planet Tech,  We also promote the spirit of creativity, innovation and productivity. </p>
+                            <p class="text-left">Join the winning team today and unlock the doors to success. Hurry and register with Oasis Planet Tech, We also promote the spirit of creativity, innovation and productivity. </p>
                             <div class="text-left"><a @click="about" class="btn text-light ">More About Us</a></div>
 
                         </div>
@@ -259,146 +241,135 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input 
-                                type="text" 
-                                name="name" 
-                                id="name"
-                                v-model="sendMessage.name"
-                                class="form-control inputs" 
-                                placeholder="Your Name *" 
-                                value="" />
+                                <input type="text" name="name" id="name" v-model="sendMessage.name" class="form-control inputs" placeholder="Your Name *" value="" />
                             </div>
                             <div class="form-group">
-                                <input 
-                                type="text" 
-                                name="email" 
-                                id="email"
-                                v-model="sendMessage.email"
-                                class="form-control inputs" 
-                                placeholder="Your Email *" 
-                                value="" />
+                                <input type="text" name="email" id="email" v-model="sendMessage.email" class="form-control inputs" placeholder="Your Email *" value="" />
                             </div>
                             <div class="form-group">
-                                <input 
-                                type="number" 
-                                name="phone"
-                                id="phone"
-                                v-model="sendMessage.phone" 
-                                class="form-control inputs" 
-                                placeholder="Your Phone Number *" 
-                                value="" />
+                                <input type="number" name="phone" id="phone" v-model="sendMessage.phone" class="form-control inputs" placeholder="Your Phone Number *" value="" />
                             </div>
 
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea 
-                                name="txtMsg"
-                                id="message"
-                                v-model="sendMessage.message"
-                                class="form-control" 
-                                placeholder="Your Message *" 
-                                style="width: 100%; height: 150px;"></textarea>
+                                <textarea name="txtMsg" id="message" v-model="sendMessage.message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group buton">
-                        <input 
-                        @click="saveMessage"
-                        type="submit" 
-                        name="btnSubmit" 
-                        class="btnContact" 
-                        value="Send Message" />
+                        <input @click="saveMessage" type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
                     </div>
                 </form>
             </div>
             <div v-else>
-      <h4>You submitted successfully!</h4>
-      <button class="btn btn-success" @click="newTutorial">Send Message</button>
-    </div>
+                <h4>You submitted successfully!</h4>
+                <button class="btn btn-success" @click="newTutorial">Send Message</button>
+            </div>
 
         </div>
         <!-- contact-form end -->
     </section>
-    <section id="team">
-      <div class="team-area section-padding30">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="cl-xl-7 col-lg-8 col-md-10">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle text-center mb-70">
-                        <span>Our Team Mambers</span>
-                        <h2>What We Can Do For You</h2>
-                    </div> 
+    <section id="team" class="team-margin">
+        <div class="team-area section-padding30 ">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="cl-xl-7 col-lg-8 col-md-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70">
+                            <span>Our Team Mambers</span>
+                            <h2>What We Can Do For You</h2>
+                        </div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                        <div class="single-team mb-30 text-center">
+                            <div class="team-img">
+                                <img src="../../assets/img/team/team1.png" alt="">
+                                <div class="team-caption">
+                                    <h3><a href="#">Mr. David Brian</a></h3>
+                                    <p>C.E.O</p>
+                                    <!-- Blog Social -->
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                        <div class="single-team mb-30 text-center">
+                            <div class="team-img">
+                                <img src="../../assets/img/team/team3.png" alt="">
+                                <div class="team-caption">
+                                    <h3><a href="#">Mrs. Joy Obot</a></h3>
+                                    <p>Secretary General</p>
+                                    <!-- Blog Social -->
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                        <div class="single-team mb-30 text-center">
+                            <div class="team-img">
+                                <img src="../../assets/img/team/team4.png" alt="">
+                                <div class="team-caption">
+                                    <h3><a href="#">Mrs Faith Babalola</a></h3>
+                                    <p> MANAGING Director </p>
+                                    <!-- Blog Social -->
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                        <div class="single-team mb-30 text-center">
+                            <div class="team-img">
+                                <img src="../../assets/img/team/team2.png" alt="">
+                                <div class="team-caption">
+                                    <h3><a href="#">Mr. Imo Joseph</a></h3>
+                                    <p> Director Of Operation </p>
+                                    <!-- Blog Social -->
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center"><a @click="team" class="btn text-light ">All Team Members</a></div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="../../assets/img/team/team1.png" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mr. David Brian</a></h3>
-                                <p>C.E.O</p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="../../assets/img/team/team2.png" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mr. IMO JOSEPH</a></h3>
-                                <p>Dirctor Of Operations</p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="../../assets/img/team/team3.png" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mrs. JOY OBOT</a></h3>
-                                <p>Sectary General</p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 
-            </div>
-             <div class="text-center"><a @click="team" class="btn text-light ">All Team Members</a></div>
         </div>
-    </div>
     </section>
     <!-- our team start  -->
 
@@ -431,7 +402,11 @@
                                         <div class="founder-text">
                                             <span>Teke Rene</span>
                                             <p>Trader</p>
+                                           
                                         </div>
+                                        <div class="founder-text">
+                                                    <div class="test-btn"> <a @click="testimonial" class="btn text-light">See All</a></div>
+                                                </div>
                                     </div>
                                 </div>
                             </div>
@@ -442,18 +417,13 @@
                     <div class="col-xl-4 col-lg-5 col-md-8">
                         <div class="testimonial-form text-center">
                             <h3>Subscribe To App.</h3>
-                            <input 
-                             type="text"
-                             id="email"
-                             required
-                             placeholder="Email"
-                              >
+                            <input type="text" id="email" required placeholder="Email">
                             <button name="submit" class="submit-btn">Request App</button>
                         </div>
                     </div>
                     <!-- Form End -->
                 </div>
-                
+
             </div>
         </div>
         <!-- Testimonial End -->
@@ -476,7 +446,7 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="../../assets/img/gallery/blog01.png" alt="">
+                                    <img src="../../assets/img/blog/blog1.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="blog-caption">
@@ -486,10 +456,10 @@
                                 </div>
                                 <div class="blog-cap text-left">
                                     <ul>
-                                        <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
+                                        <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
                                         <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                     </ul>
-                                    <h3 class="text-left"><a href="../../blog_details.html">Here’s what you should know before.</a></h3>
+                                    <h3 class="text-left"><a @click="blog"> Adressing People in Conference</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -499,20 +469,20 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="../../assets/img/gallery/blog1.png" alt="">
+                                    <img src="../../assets/img/blog/blog2.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="blog-caption">
                                 <div class="blog-date text-center">
-                                    <span>27</span>
-                                    <p>SEP</p>
+                                    <span>06</span>
+                                    <p>JUNE</p>
                                 </div>
                                 <div class="blog-cap text-left">
                                     <ul>
-                                        <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
+                                        <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
                                         <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                     </ul>
-                                    <h3 class="text-left"><a href="../../blog_details.html">Here’s what you should know before.</a></h3>
+                                    <h3 class="text-left"><a @click="blog"> Explaining The OASIS APP</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -521,20 +491,20 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="../../assets/img/gallery/blog02.png" alt="">
+                                    <img src="../../assets/img/blog/blog6.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="blog-caption">
                                 <div class="blog-date text-center">
-                                    <span>27</span>
-                                    <p>SEP</p>
+                                    <span>25</span>
+                                    <p>AUG</p>
                                 </div>
                                 <div class="blog-cap text-left">
                                     <ul>
-                                        <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
-                                        <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
+                                        <li><a href="#"><i class="ti-user"></i> Secretary General</a></li>
+                                        <li><a href="#"><i class="ti-comment-alt"> </i> 12</a></li>
                                     </ul>
-                                    <h3 class="text-left"><a href="blog_details.html">Here’s what you should know before.</a></h3>
+                                    <h3 class="text-left"><a @click="blog">Managing the App Demand</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -598,7 +568,7 @@
                                 <div class="footer-tittle">
                                     <h4 class="text-center">RESOURCES</h4>
                                     <ul class="text-center footer-list">
-                                        <li><a href="#">Home Insurance</a></li>
+                                        <li><a href="#">Entreprenuer Knowledge</a></li>
                                         <li><a href="#"> Registration</a></li>
                                         <li><a href="#"> Get Mobile App</a></li>
                                         <li><a href="#"> Trade and Earn</a></li>
@@ -620,12 +590,12 @@
                                 </div>
                                 <!-- Footer Social -->
                                 <div class="footer-social ">
-                                   <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a>
-                                       <a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a>
-                                      
-                                        <a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a>
-                                        <a href="https://www.youtube.com/channel/UCoewA9dAUWXFFGZIDsEJTvw"><i class="fab fa-youtube"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a>
+
+                                    <a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCoewA9dAUWXFFGZIDsEJTvw"><i class="fab fa-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -694,52 +664,52 @@ export default {
     },
     data() {
         return {
-                sendMessage: {
-                   name: '',
-                   email: '',
-                   phone: '',
-                   message:''
-                },
-                submitted: false
-            };
-        },
-        
+            sendMessage: {
+                name: '',
+                email: '',
+                phone: '',
+                message: ''
+            },
+            submitted: false
+        };
+    },
+
     methods: {
-         saveMessage () {
-                var data = {
-                    name: this.sendMessage.name,
-                    email: this.sendMessage.email,
-                    phone: this.sendMessage.phone,
-                    message: this.sendMessage.message
-                };
-                this.apiURL.create(data).then(response => {
+        saveMessage() {
+            var data = {
+                name: this.sendMessage.name,
+                email: this.sendMessage.email,
+                phone: this.sendMessage.phone,
+                message: this.sendMessage.message
+            };
+            this.apiURL.create(data).then(response => {
                     this.sendMessage.id = response.data.id;
                     console.log(response.data);
-                    this.submitted = true; 
+                    this.submitted = true;
                 })
                 .catch(e => {
                     console.log(e);
                 });
-            },
-            newMessage(){
-                this.submitted = false;
-                this.sendMessage = {};
-            }, 
-            handleSubmitForm() {
-                let apiURL = messageUrl`/api/contact`;
-                
-                this.axios.post(apiURL, this.sendMessage).then(() => {
-                  this.$router.push('/view')
-                  this.student = {
+        },
+        newMessage() {
+            this.submitted = false;
+            this.sendMessage = {};
+        },
+        handleSubmitForm() {
+            let apiURL = messageUrl `/api/contact`;
+
+            this.axios.post(apiURL, this.sendMessage).then(() => {
+                this.$router.push('/view')
+                this.student = {
                     name: '',
                     email: '',
                     phone: '',
-                    message:''
-                  }
-                }).catch(error => {
-                    console.log(error)
-                });
-            },
+                    message: ''
+                }
+            }).catch(error => {
+                console.log(error)
+            });
+        },
         home: function () {
             this.$router.push({
                 path: "/",
@@ -770,9 +740,19 @@ export default {
                 path: "/service",
             });
         },
-         team: function () {
+        team: function () {
             this.$router.push({
                 path: "/team",
+            });
+        },
+        gallery: function () {
+            this.$router.push({
+                path: "/gallery",
+            });
+        },
+            testimonial: function () {
+            this.$router.push({
+                path: "/testimonials",
             });
         },
     },
@@ -781,4 +761,7 @@ export default {
 
 <style>
 @import url("../../assets/css/style.css");
-</style> 
+.test-btn{
+    border-radius: 25px !important;
+}
+</style>

@@ -64,7 +64,5 @@ export default {
 }
 </script>
 <style scoped>
-    .main-download{
-        margin-top: 200px!important;
-    }
+   
 </style>
