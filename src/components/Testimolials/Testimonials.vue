@@ -13,7 +13,7 @@
 
 
 
-    <div class="container-fluid px-2 px-md-4 py-5 mx-auto">
+    <!-- <div class="container-fluid px-2 px-md-4 py-5 mx-auto">
     <div class="row d-flex justify-content-center">
         <div class="col-md-10 col-lg-9 col-xl-8">
             <div class="card card-main border-0 text-center">
@@ -57,11 +57,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
        
-       <!-- <div class="container mt-5">
+       <div class="container mt-5 mb-5">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 main-card">
             <div class="card d-flex mx-auto">
                 <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/3TlwnLF.jpg"> </div>
                 <div class="card-text">
@@ -89,7 +89,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div> 
 
 
 
@@ -126,7 +126,7 @@ export default {
 
 .card {
     border-radius: 1rem;
-    box-shadow: 0px -10px 0px rgb(151, 248, 6)
+    box-shadow: 0px -10px 0px #EDC750
 }
 
 @media(max-width:767px) {
@@ -143,7 +143,8 @@ img {
 }
 
 .col-md-4 {
-    padding: 0 0.5rem
+    padding: 0 0.5rem;
+    min-height: 400px;
 }
 
 .card-title {
@@ -179,12 +180,12 @@ img {
 }
 
 a {
-    color: rgb(151, 248, 6);
+    color:#EDC750;
     font-weight: bold
 }
 
 a:hover {
-    color: rgb(151, 248, 6)
+    color: #EDC750
 }
 
 
