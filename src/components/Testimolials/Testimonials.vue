@@ -65,16 +65,17 @@
             <div class="card d-flex mx-auto">
                 <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/3TlwnLF.jpg"> </div>
                 <div class="card-text">
-                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                    <div class="card-title">Lugah S</div>Wonderful, Oasis planet tech. Ltd doesn't waste time in crediting my account after trading daily. Infact , Oasis planet tech is like God's grace in times like this in Nigeria.
+
                 </div>
-                <div class="footer"> <span id="name">Micheal Smith<br></span> <span id="position">CEO of <a href="#">Google.com</a></span> </div>
+                <div class="footer"> <span id="name">Lugah S<br></span> <span id="position">CEO of <a href="#">Google.com</a></span> </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card d-flex mx-auto">
                 <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/Uz4FjGZ.jpg"> </div>
                 <div class="card-text">
-                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                    <div class="card-title"> obayopo A</div> Oasis Planet Tech is the best network marketing ever..... no stress, no referrals no selling no hawking no purchase For the past 17 days, alert has never stopped dropping God bless the brain behind the company.
                 </div>
                 <div class="footer"> <span id="name">Angellia Miller<br></span> <span id="position">CEO of <a href="#">Facebook.com</a></span> </div>
             </div>
@@ -83,7 +84,7 @@
             <div class="card d-flex mx-auto ">
                 <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/udGH5tO.jpg"> </div>
                 <div class="card-text">
-                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                    <div class="card-title">Teke Rene</div> I'm here to thank you all for you good work of your company, its just like magic to me, i can now watch videos and earn directly with my UBA card, videos i used to watch for free. This is awesome
                 </div>
                 <div class="footer"> <span id="name">Christina Williams<br></span> <span id="position">UX Designer at <a href="#">Youtube.com</a></span> </div>
             </div>
