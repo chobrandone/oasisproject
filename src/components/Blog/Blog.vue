@@ -125,7 +125,8 @@
                                         <h3 class="text-center"><a @click="blog"> Oasis Planet Tech Packages</a></h3>
                                     </div>
                                     <div class="ru2n4">
-                                        Our packages are:
+                                       <h1>Our packages are:</h1>
+                                        
                                         <br>
                                         <br>
                                         <p> Gold.... #100,000 </p>

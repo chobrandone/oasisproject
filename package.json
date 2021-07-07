@@ -19,9 +19,11 @@
     "popper.js": "^1.16.1",
     "serve-static": "^1.14.1",
     "v-video-embed": "^1.0.8",
+    "vee-validate": "^3.4.10",
     "vue": "^2.6.11",
     "vue-gallery-slideshow": "^1.5.2",
-    "vue-router": "^3.5.1"
+    "vue-router": "^3.5.1",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

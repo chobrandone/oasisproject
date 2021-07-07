@@ -104,16 +104,7 @@
                                         <h2>Oasis Planet Tech Packages</h2>
                                     </a>
                                     <div class="ru2n4">
-                                        Our packages are:
-                                        <br>
-                                        <br>
-                                        <p> Gold.... #100,000 </p>
-                                        <p> Diamond...#50,000 </p>
-                                        <p> Silver.......#20,000 </p>
-                                        <p> Bronze....#5,000 </p>
-                                        The system does not allow upgrade for now. Hence, make choices that will benefit for the first 12months.
-                                        <br>
-                                        <br>
+                                     
 
                                     </div>
                                     <ul class="blog-info-link">
@@ -123,6 +114,16 @@
                                     <b-button v-b-toggle.collapse-2 class="toggle-btn">view full content</b-button>
                                     <b-collapse id="collapse-2" class="mt-2">
                                         <b-card>
+                                              <h1> Our packages are:</h1>
+                                        <br>
+                                        <br>
+                                        <p> Gold.... #100,000 </p>
+                                        <p> Diamond...#50,000 </p>
+                                        <p> Silver.......#20,000 </p>
+                                        <p> Bronze....#5,000 </p>
+                                        The system does not allow upgrade for now. Hence, make choices that will benefit for the first 12months.
+                                        <br>
+                                        <br>
                                             Whatever package you choose can not be upgraded until you finish the timing.
                                             <br>
                                             <br>
@@ -238,7 +239,7 @@
                                 </div>
                             </article>
 
-                            <nav class="blog-pagination justify-content-center d-flex">
+                            <!-- <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
                                     <li class="page-item">
                                         <a href="#" class="page-link" aria-label="Previous">
@@ -258,7 +259,7 @@
                                     </li>
                                 </ul>
 
-                            </nav>
+                            </nav> -->
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -445,7 +446,7 @@ export default {
 }
 
 .blog_area {
-    margin-top: 200px !important;
+    /* margin-top: 200px !important; */
 }
 
 .blog_area a {
