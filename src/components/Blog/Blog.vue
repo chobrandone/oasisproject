@@ -142,19 +142,7 @@
 
          
 
-          <div class="search-wrapper">
-    <input type="text" v-model="search" placeholder="Search title.."/>
-        <label>Search title:</label>
-  </div>
-  <div class="wrapper">
-    <div class="card" v-for="post in filteredList">
-      <a v-bind:href="post.link" target="_blank">
-        <img v-bind:src="post.img"/>
-        <small>posted by: {{ post.author }}</small>
-        {{ post.title }}
-      </a>
-    </div>
-  </div>
+   
 
             <!-- Blog Area End -->
         </section>
