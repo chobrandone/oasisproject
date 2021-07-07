@@ -26,10 +26,19 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>Apology for customer line temporary unavailability</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <div class="ru2n4">
+                                        To all our highly esteemed customers.
+                                        <br>
+                                        <br>
+                                        We're deeply sorry for not been able to reach us through our customer line.
+                                        <br>
+                                        <br>
+                                        We're working hard to provide more customer line and to also ensure creditability.
+                                        <br>
+                                        <br>
+                                    </div>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
@@ -37,15 +46,10 @@
                                     <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">To all our highly esteemed customers .
-
-                                                We're deeply sorry for not been able to reach us through our customer line.
-
-                                                We're working hard to provide more customer line and to also ensure creditability .
-
-                                                Thank you so much for your understanding.
-
-                                                Oasis planet Tech ~Competency and intergrity .</p>
+                                        Thank you so much for your understanding.
+                                        <br>
+                                        <br>
+                                        <strong>Oasis planet Tech </strong>  ~ Competency and intergrity.
 
                                         </b-card>
                                     </b-collapse>
@@ -63,10 +67,15 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>Oasis Planet Tech brochure</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                     <div class="ru2n4">
+                                        Taking a look at our brochure helps you better who we are and what we have to offer.
+                                        <br>
+                                        <br>
+
+                                    </div>
+
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
@@ -74,7 +83,7 @@
                                     <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
+                                            <p class="card-text"><strong> THE WINNING TEAM NOW 🤗🤗 </strong></p>
 
                                         </b-card>
                                     </b-collapse>
@@ -92,10 +101,21 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>Oasis Planet Tech Packages</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <div class="ru2n4">
+                                        Our packages are:
+                                        <br>
+                                        <br>
+                                        <p> Gold.... #100,000 </p>
+                                        <p> Diamond...#50,000 </p>
+                                        <p> Silver.......#20,000 </p>
+                                        <p> Bronze....#5,000 </p>
+                                        The system does not allow upgrade for now. Hence, make choices that will benefit for the first 12months.
+                                        <br>
+                                        <br>
+
+                                    </div>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
@@ -103,8 +123,10 @@
                                     <b-button v-b-toggle.collapse-2 class="toggle-btn">view full content</b-button>
                                     <b-collapse id="collapse-2" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
-
+                                            Whatever package you choose can not be upgraded until you finish the timing.
+                                            <br>
+                                            <br>
+                                            I advise to take the gold 🥇 and make it big okay... Thanks.
                                         </b-card>
                                     </b-collapse>
                                 </div>
@@ -121,10 +143,15 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="../../blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>Risk management</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                <div class="ru2n4">
+                                    The system has it's inbuilt mechanisms for risk..
+                                    <p> We work in partnership with: </p>
+                                    <p> - A Pan-african bank (UBA) and </p>
+                                    <p> - A Pan-african mobile network provider(MTN) </p>
+                                    <p> Instant transfer into subscribers account and can be cashed daily.... </p>
+                                </div>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
@@ -132,8 +159,16 @@
                                     <b-button v-b-toggle.collapse-3 class="toggle-btn">view full content</b-button>
                                     <b-collapse id="collapse-3" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
-
+                                            No request for withdrawal that could be rejected....
+                                            <br>
+                                            <br>
+                                            Payment made daily into subscribers account..
+                                            <br>
+                                            <br>
+                                            Recoupment of reg- fee and much more in one month of subscriptions...
+                                            <br>
+                                            <br>
+                                            Hence our business is <strong> risk free. </strong>
                                         </b-card>
                                     </b-collapse>
                                 </div>
@@ -150,10 +185,27 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>Explaining The OASIS APP</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                <div class="ru2n4">
+                                    Good day friends 🌻
+                                    <br>
+                                    <br>
+                                    I welcome you all to this platform
+                                    Oasis planet tech is one unique system that gives you opportunity to *learn* and *earn*
+                                    <br>
+                                    <br>
+                                    Our world 🌍🌍 has changed and we are in a connected economy.
+                                    <br>
+                                    <br>
+                                    This economy allow you to make money through a system and just using your phone.
+                                    <br>
+                                    <br>
+                                    Our world is in dear need of men and women of skills.
+                                    <br>
+                                    <br>
+
+                                </div>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
@@ -161,8 +213,26 @@
                                     <b-button v-b-toggle.collapse-4 class="toggle-btn">view full content</b-button>
                                     <b-collapse id="collapse-4" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
-
+                                            Hence, oasis planet tech was born to gives skills on line by watching educating videos on line and then pay you.... wow
+                                            <br>
+                                            <br>
+                                            You can make up to #2000 to #6000 daily!😮
+                                            <br>
+                                            <br>
+                                            *Amazing opportunity 🤠*
+                                            I guess you can't miss this for any thing.
+                                            <br>
+                                            <br>
+                                            Oya! DM me to secure your slot quickly!
+                                            <br>
+                                            <br>
+                                            Congratulations 👏🥳🥳🥳🥳👏🥳👏🥳👏🥳👏 if you are here.
+                                            <br>
+                                            <br>
+                                            Connect with me and be part of the BIG DREAM!
+                                            <br>
+                                            <br>
+                                            Thanks 👍.
                                         </b-card>
                                     </b-collapse>
                                 </div>
