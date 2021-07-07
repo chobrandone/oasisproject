@@ -334,18 +334,6 @@ export default {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .togle {
     border-radius: 25px;
     background: #EDC750;
