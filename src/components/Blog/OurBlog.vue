@@ -43,7 +43,7 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">Read more</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
                                         Thank you so much for your understanding.
@@ -80,7 +80,7 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">Read more</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
                                             <p class="card-text"><strong> THE WINNING TEAM NOW 🤗🤗 </strong></p>
@@ -120,7 +120,7 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-2 class="toggle-btn">view full content</b-button>
+                                    <b-button v-b-toggle.collapse-2 class="toggle-btn">Read more</b-button>
                                     <b-collapse id="collapse-2" class="mt-2">
                                         <b-card>
                                             Whatever package you choose can not be upgraded until you finish the timing.
@@ -156,7 +156,7 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-3 class="toggle-btn">view full content</b-button>
+                                    <b-button v-b-toggle.collapse-3 class="toggle-btn">Read more</b-button>
                                     <b-collapse id="collapse-3" class="mt-2">
                                         <b-card>
                                             No request for withdrawal that could be rejected....
@@ -210,7 +210,7 @@
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-4 class="toggle-btn">view full content</b-button>
+                                    <b-button v-b-toggle.collapse-4 class="toggle-btn">Read more</b-button>
                                     <b-collapse id="collapse-4" class="mt-2">
                                         <b-card>
                                             Hence, oasis planet tech was born to gives skills on line by watching educating videos on line and then pay you.... wow
