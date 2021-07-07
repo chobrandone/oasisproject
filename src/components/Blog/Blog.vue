@@ -10,10 +10,8 @@
 
     <main>
 
-     
-
         <!--================Blog Area =================-->
-           <section id="blog ">
+        <section id="blog ">
             <!--? Blog Area Start -->
             <div class="home-blog-area mt-5">
                 <div class="container">
@@ -139,15 +137,14 @@
                                     </div>
 
                                     <div class="mb-3">
-                                        <b-button v-b-toggle.collapse-1 class="toggle-btn togle"> Read More</b-button>
-                                        <b-collapse id="collapse-1" class="mt-2">
-                                            <b-card>
-                                                Whatever package you choose can not be upgraded until you finish the timing.
-                                                <br>
-                                                <br>
-                                                I advise to take the gold 🥇 and make it big okay... Thanks.
-                                            </b-card>
-                                        </b-collapse>
+                                      <b-button v-b-toggle.my-collapse-1 class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse-1" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
+
+                                </b-collapse>
                                     </div>
 
                                 </div>
@@ -240,33 +237,15 @@
 
                                 </div>
                                 <div class="mb-3">
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
-                                    <b-collapse id="collapse-1" class="mt-2">
-                                        <b-card>
-                                            Hence, oasis planet tech was born to gives skills on line by watching educating videos on line and then pay you.... wow
-                                            <br>
-                                            <br>
-                                            You can make up to #2000 to #6000 daily!😮
-                                            <br>
-                                            <br>
-                                            *Amazing opportunity 🤠*
-                                            I guess you can't miss this for any thing.
-                                            <br>
-                                            <br>
-                                            Oya! DM me to secure your slot quickly!
-                                            <br>
-                                            <br>
-                                            Congratulations 👏🥳🥳🥳🥳👏🥳👏🥳👏🥳👏 if you are here.
-                                            <br>
-                                            <br>
-                                            Connect with me and be part of the BIG DREAM!
-                                            <br>
-                                            <br>
-                                            Thanks 👍.
+                                   <b-button v-b-toggle.my-collapse-2 class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse-2" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
 
-
-                                        </b-card>
-                                    </b-collapse>
+                                </b-collapse>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -293,127 +272,17 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text"> you are all welcome to our blog</p>
+                                <b-button v-b-toggle.my-collapse class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
 
-                                    </b-card>
                                 </b-collapse>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="home-blog-single mb-30">
-                                <div class="blog-img-cap">
-                                    <div class="blog-img">
-                                        <img src="../../assets/img/blog/blog1.jpeg" alt="">
-                                    </div>
-                                </div>
-                                <div class="blog-caption">
-                                    <div class="blog-date text-center">
-                                        <span>27</span>
-                                        <p>SEP</p>
-                                    </div>
-                                    <div class="blog-cap text-center">
-                                        <ul>
-                                            <li><a href="#"><i class="ti-user"></i>C.E.O David</a></li>
-                                            <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
-                                        </ul>
-                                        <h3 class="text-center"><a @click="blog"> Adressing People in Conference</a></h3>
-                                    </div>
-                                    <div class="ru2n4">
-                                        <strong> OASIS PLANET TECH </strong>
-                                        <br>
-                                        <br>
-                                        This system offers amazing opportunity to all subscribers on it.
-                                        <br>
-                                        <br>
-                                        With your phone in the connected economy, you can connect people to people using a system and you are making money like Mark Z (facebook) You can connect people to product with a system and be making money like Jeff ( amazing) You can connect to educating videos using a system and you are making money like David Brian (Oasis planet tech).
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <b-button v-b-toggle.collapse-1 class="toggle-btn togle"> Read More</b-button>
-                                        <b-collapse id="collapse-1" class="mt-2">
-                                            <b-card>
-                                                <!-- <p class="card-text"> you are all welcome to our blog</p> -->
-                                                    What products does facebook sale? Why is he and all the affiliate so wealthy?
-                                                    There so many services done on line that pays, eg advertising, etc.
-                                                    <br>
-                                                    <br>
-                                                    I encourage you here to be part of the BIG DREAM!
-                                                    <br>
-                                                    <br>
-                                                    DM me tomorrow to get you started.
-                                                    <br>
-                                                    <br>
-                                                    Thanks to you all!
-
-                                            </b-card>
-                                        </b-collapse>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>     
-
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="home-blog-single mb-30">
-                                <div class="blog-img-cap">
-                                    <div class="blog-img">
-                                        <img src="../../assets/img/blog/blog1.jpeg" alt="">
-                                    </div>
-                                </div>
-                                <div class="blog-caption">
-                                    <div class="blog-date text-center">
-                                        <span>27</span>
-                                        <p>SEP</p>
-                                    </div>
-                                    <div class="blog-cap text-center">
-                                        <ul>
-                                            <li><a href="#"><i class="ti-user"></i>C.E.O David</a></li>
-                                            <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
-                                        </ul>
-                                        <h3 class="text-center"><a @click="blog"> Adressing People in Conference</a></h3>
-                                    </div>
-                                    <div class="ru2n4">
-                                        <strong> OASIS PLANET TECH </strong>
-                                        <br>
-                                        <br>
-                                        This system offers amazing opportunity to all subscribers on it.
-                                        <br>
-                                        <br>
-                                        With your phone in the connected economy, you can connect people to people using a system and you are making money like Mark Z (facebook) You can connect people to product with a system and be making money like Jeff ( amazing) You can connect to educating videos using a system and you are making money like David Brian (Oasis planet tech).
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <b-button v-b-toggle.collapse-1 class="toggle-btn togle"> Read More</b-button>
-                                        <b-collapse id="collapse-1" class="mt-2">
-                                            <b-card>
-                                                <!-- <p class="card-text"> you are all welcome to our blog</p> -->
-                                                    What products does facebook sale? Why is he and all the affiliate so wealthy?
-                                                    There so many services done on line that pays, eg advertising, etc.
-                                                    <br>
-                                                    <br>
-                                                    I encourage you here to be part of the BIG DREAM!
-                                                    <br>
-                                                    <br>
-                                                    DM me tomorrow to get you started.
-                                                    <br>
-                                                    <br>
-                                                    Thanks to you all!
-
-                                            </b-card>
-                                        </b-collapse>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
+                        
                     </div>
 
                     <div>
@@ -421,6 +290,11 @@
                     </div>
                 </div>
             </div>
+
+         
+
+   
+
             <!-- Blog Area End -->
         </section>
         <!--================Blog Area =================-->
@@ -457,28 +331,42 @@ export default {
 </script>
 
 <style scoped>
-.togle{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.togle {
     border-radius: 25px;
-       background: #EDC750;
+    background: #EDC750;
     color: white !important;
     display: inline-block;
-   
-  
+
     font-size: 14px;
     font-weight: 400;
-   
+
     border: 1px solid #EDC750;
-    
+
     text-align: center;
-  
+
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .form-group {
     margin: 0;
     padding: 20px;
 
-   
 }
 
 .form-control {
@@ -521,9 +409,9 @@ export default {
 
 toggle-btn {
     background: #f15f22;
-   
+
     border-radius: 25px !important;
-    
+
 }
 
 .toggle-btn:hover {
@@ -546,6 +434,4 @@ toggle-btn {
     text-transform: uppercase;
     cursor: pointer;
 }
-
-
 </style>

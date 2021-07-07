@@ -1,54 +1,53 @@
 <template>
    <!--? Testimonial Start -->
-    <div class="testimonial-area testimonial-padding section-bg" data-background="../../assets/img/gallery/section_bg04.jpg">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-7 col-lg-7 mb-5">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle section-tittle2 mb-25">
-                        <span class="text-left">Clients Testimonials</span>
-                        <h2 class="text-white text-left">What Our Clients Say!</h2>
-                    </div> 
-                    <div class="h1-testimonial-active mb-70">
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial ">
-                            <!-- Testimonial Content -->
-                            <div class="testimonial-caption ">
-                                <div class="testimonial-top-cap text-left">
-                                    <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
-                                </div>
-                                <!-- founder -->
-                                <div class="testimonial-founder d-flex align-items-center">
-                                    <div class="founder-img">
-                                        <img src="../../assets/img/gallery/Homepage_testi.png" alt="">
-                                    </div>
-                                    <div class="founder-text">
-                                        <span>Jhaon smith</span>
-                                        <p>Creative designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                  
 
-                        
-                    </div>
+   <div>
+          <div class="">
+
+        <Head />
+    </div>
+          <div class="">
+
+        <Testimonials />
+    </div>
+       
+       <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/3TlwnLF.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
                 </div>
-                <!-- Form Start -->
-                <div class="col-xl-4 col-lg-5 col-md-8">
-                    <div class="testimonial-form text-center">
-                        <h3>Always listening, always understanding.</h3>
-                        <input type="text" placeholder="Incoterms">
-                        <button name="submit" class="submit-btn">Request a Quote</button>
-                    </div>
+                <div class="footer"> <span id="name">Micheal Smith<br></span> <span id="position">CEO of <a href="#">Google.com</a></span> </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/Uz4FjGZ.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
                 </div>
-                <!-- Form End -->
+                <div class="footer"> <span id="name">Angellia Miller<br></span> <span id="position">CEO of <a href="#">Facebook.com</a></span> </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card d-flex mx-auto ">
+                <div class="card-image"> <img class="img-fluid d-flex mx-auto" src="https://i.imgur.com/udGH5tO.jpg"> </div>
+                <div class="card-text">
+                    <div class="card-title">Lorem Ipsum!</div> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus Duis leo. Donec sodales sagittis magna
+                </div>
+                <div class="footer"> <span id="name">Christina Williams<br></span> <span id="position">UX Designer at <a href="#">Youtube.com</a></span> </div>
             </div>
         </div>
     </div>
+</div></div>
+
     <!-- Testimonial End -->
 </template>
 <script>
+import Testimonials from "./TestimonialHero.vue"
+import Head from "../Header/Header.vue";
 export default {
     name:"Testimolials",
     data() {
@@ -56,9 +55,87 @@ export default {
             
         }
     },
+    components:{
+        Testimonials,
+        Head
+    }
 }
 </script>
 <style scoped>
+
+.container {
+    max-width: 950px
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0px -10px 0px rgb(151, 248, 6)
+}
+
+@media(max-width:767px) {
+    .card {
+        margin: 1rem 0.7rem 1rem;
+        max-width: 80vw
+    }
+}
+
+img {
+    width: 6.2rem;
+    border-radius: 5rem;
+    margin: 1.3rem auto 1rem auto
+}
+
+.col-md-4 {
+    padding: 0 0.5rem
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'IM Fell French Canon SC'
+}
+
+.card-text {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    color: rgb(82, 81, 81);
+    line-height: 1.4rem
+}
+
+.footer {
+    border-top: none;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 2rem 0 1.4rem 0;
+    font-family: 'Varela Round'
+}
+
+#name {
+    font-size: 0.8rem;
+    font-weight: bold
+}
+
+#position {
+    font-size: 0.7rem
+}
+
+a {
+    color: rgb(151, 248, 6);
+    font-weight: bold
+}
+
+a:hover {
+    color: rgb(151, 248, 6)
+}
+
+
+
+
+
+
+/* 
 .testimonial-area{
 background-image: url("../../assets/img/gallery/section_bg04.jpg");
 background-size: cover;
@@ -269,5 +346,5 @@ background-size: cover;
     .testimonial-form input::placeholder {
         font-size: 14px
     }
-}
+} */
 </style>
