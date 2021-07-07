@@ -30,6 +30,7 @@
                     <img src="../../assets/img/gallery/G3.jpeg" class="img-thumbnail">
                 </a>
             </div>
+			
             <div class="col-md-4 mb-4">
                 <a href="#">
                     <img src="../../assets/img/gallery/G4.jpeg" class="img-thumbnail">
