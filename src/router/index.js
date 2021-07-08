@@ -5,7 +5,7 @@ import Contact from '../components/Contact/Contact.vue'
 import Aboutus from '../components/About/About.vue';
 import Download from '../components/Download/Download.vue'
 import Service from '../components/OurServices/Services.vue'
-import Gallery from '../components/Gallery/Gallery.vue'
+import Gallery from '../components/Gallery/gallery.vue'
 import Team from '../components/OurTeam/Team.vue'
 import Testimonials from "../components/Testimolials/Testimonials.vue"
 
