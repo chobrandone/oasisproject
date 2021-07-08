@@ -10,10 +10,8 @@
 
     <main>
 
-     
-
         <!--================Blog Area =================-->
-           <section id="blog ">
+        <section id="blog ">
             <!--? Blog Area Start -->
             <div class="home-blog-area mt-5">
                 <div class="container">
@@ -39,6 +37,78 @@
                             <div class="home-blog-single mb-30">
                                 <div class="blog-img-cap">
                                     <div class="blog-img">
+                                        <img src="../../assets/img/blog/blog5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-caption">
+                                    <div class="blog-date text-center">
+                                        <span>27</span>
+                                        <p>SEP</p>
+                                    </div>
+                                    <div class="blog-cap text-center">
+                                        <ul>
+                                            <li><a href="#"><i class="ti-user"></i>C.E.O David</a></li>
+                                            <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
+                                        </ul>
+                                        <h3 class="text-center"><a @click="blog"> Apology for customer line unavailability</a></h3>
+                                    </div>
+                                    <div class="ru2n4">
+                                        To all our highly esteemed customers.
+                                        <br>
+                                        <br>
+                                        We're deeply sorry for not been able to reach us through our customer line.
+                                        <br>
+                                        <br>
+                                        We're working hard to provide more customer line and to also ensure creditability.
+                                        <br>
+                                        <br>
+                                        Thank you so much for your understanding.
+                                        <br>
+                                        <br>
+                                        <strong>Oasis planet Tech </strong>  ~ Competency and intergrity.
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="home-blog-single mb-30">
+                                <div class="blog-img-cap">
+                                    <div class="blog-img">
+                                        <img src="../../assets/img/blog/oasis.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-caption">
+                                    <div class="blog-date text-center">
+                                        <span>27</span>
+                                        <p>SEP</p>
+                                    </div>
+                                    <div class="blog-cap text-center">
+                                        <ul>
+                                            <li><a href="#"><i class="ti-user"></i>C.E.O David</a></li>
+                                            <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
+                                        </ul>
+                                        <h3 class="text-center"><a @click="blog"> Oasis Planet Tech brochure </a></h3>
+                                    </div>
+                                    <div class="ru2n4">
+                                        Taking a look at our brochure helps you better who we are and what we have to offer.
+                                        <br>
+                                        <br>
+                                        <strong> THE WINNING TEAM NOW 🤗🤗 </strong>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="home-blog-single mb-30">
+                                <div class="blog-img-cap">
+                                    <div class="blog-img">
                                         <img src="../../assets/img/blog/blog1.jpeg" alt="">
                                     </div>
                                 </div>
@@ -49,19 +119,33 @@
                                     </div>
                                     <div class="blog-cap text-center">
                                         <ul>
-                                            <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
+                                            <li><a href="#"><i class="ti-user"></i>C.E.O David</a></li>
                                             <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                         </ul>
-                                        <h3 class="text-center"><a @click="blog"> Adressing People in Conference</a></h3>
+                                        <h3 class="text-center"><a @click="blog"> Oasis Planet Tech Packages</a></h3>
                                     </div>
-                                    <div class="mb-3">
-                                        <b-button v-b-toggle.collapse-1 class="toggle-btn togle"> Read More</b-button>
-                                        <b-collapse id="collapse-1" class="mt-2">
-                                            <b-card>
-                                                <p class="card-text"> you are all welcome to our blog</p>
+                                    <div class="ru2n4">
+                                       <h1>Our packages are:</h1>
+                                        
+                                        <br>
+                                        <br>
+                                        <p> Gold.... #100,000 </p>
+                                        <p> Diamond...#50,000 </p>
+                                        <p> Silver.......#20,000 </p>
+                                        <p> Bronze....#5,000 </p>
+                                        The system does not allow upgrade for now. Hence, make choices that will benefit for the first 12months.
 
-                                            </b-card>
-                                        </b-collapse>
+                                    </div>
+
+                                    <div class="mb-3">
+                                      <b-button v-b-toggle.my-collapse-1 class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse-1" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
+
+                                </b-collapse>
                                     </div>
 
                                 </div>
@@ -85,20 +169,88 @@
                                             <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
                                             <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                         </ul>
-                                        <h3 class="text-center"><a @click="blog"> Explaining The OASIS APP</a></h3>
+                                        <h3 class="text-center"><a @click="blog"> Risk management </a></h3>
                                     </div>
                                 </div>
+                                <div class="ru2n4">
+                                    The system has it's inbuilt mechanisms for risk..
+                                    <p> We work in partnership with: </p>
+                                    <p> - A Pan-african bank (UBA) and </p>
+                                    <p> - A Pan-african mobile network provider(MTN) </p>
+                                    <p> Instant transfer into subscribers account and can be cashed daily.... </p>
+                                </div>
+
                                 <div class="mb-3">
                                     <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
-                                            <p class="card-text"> you ar eall welcome to our blog</p>
-
+                                            No request for withdrawal that could be rejected....
+                                            <br>
+                                            <br>
+                                            Payment made daily into subscribers account..
+                                            <br>
+                                            <br>
+                                            Recoupment of reg- fee and much more in one month of subscriptions...
+                                            <br>
+                                            <br>
+                                            Hence our business is <strong> risk free. </strong>
                                         </b-card>
                                     </b-collapse>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="home-blog-single mb-30">
+                                <div class="blog-img-cap">
+                                    <div class="blog-img">
+                                        <img src="../../assets/img/blog/blog2.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="blog-caption">
+                                    <div class="blog-date text-center">
+                                        <span>06</span>
+                                        <p>JUNE</p>
+                                    </div>
+                                    <div class="blog-cap text-center">
+                                        <ul>
+                                            <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
+                                            <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
+                                        </ul>
+                                        <h3 class="text-center"><a @click="blog"> Explaining The OASIS APP</a></h3>
+                                    </div>
+                                </div>
+                                <div class="ru2n4">
+                                    Good day friends 🌻
+                                    <br>
+                                    <br>
+                                    I welcome you all to this platform
+                                    Oasis planet tech is one unique system that gives you opportunity to *learn* and *earn*
+                                    <br>
+                                    <br>
+                                    Our world 🌍🌍 has changed and we are in a connected economy.
+                                    <br>
+                                    <br>
+                                    This economy allow you to make money through a system and just using your phone.
+                                    <br>
+                                    <br>
+                                    Our world is in dear need of men and women of skills.
+
+                                </div>
+                                <div class="mb-3">
+                                   <b-button v-b-toggle.my-collapse-2 class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse-2" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
+
+                                </b-collapse>
+                                  
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-lg-4 col-md-6">
                             <div class="home-blog-single mb-30">
                                 <div class="blog-img-cap">
@@ -121,21 +273,29 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn togle">Read More</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text"> you are all welcome to our blog</p>
+                                <b-button v-b-toggle.my-collapse class="toggle-btn togle">Read More</b-button>
+                                <b-collapse id="my-collapse" class="mt-2">
+                                    <div>
+                                        <p class="px-3 py-2"> you are all welcome to our blog Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+                                            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                    </div>
 
-                                    </b-card>
                                 </b-collapse>
                             </div>
                         </div>
+                        
                     </div>
+
                     <div>
 
                     </div>
                 </div>
             </div>
+
+         
+
+   
+
             <!-- Blog Area End -->
         </section>
         <!--================Blog Area =================-->
@@ -172,28 +332,30 @@ export default {
 </script>
 
 <style scoped>
-.togle{
+
+
+
+.togle {
     border-radius: 25px;
-       background: #EDC750;
+    background: #EDC750;
     color: white !important;
     display: inline-block;
-   
-  
+
     font-size: 14px;
     font-weight: 400;
-   
+
     border: 1px solid #EDC750;
-    
+
     text-align: center;
-  
+
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .form-group {
     margin: 0;
     padding: 20px;
 
-   
 }
 
 .form-control {
@@ -236,9 +398,9 @@ export default {
 
 toggle-btn {
     background: #f15f22;
-   
+
     border-radius: 25px !important;
-    
+
 }
 
 .toggle-btn:hover {
@@ -261,6 +423,4 @@ toggle-btn {
     text-transform: uppercase;
     cursor: pointer;
 }
-
-
 </style>

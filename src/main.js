@@ -20,6 +20,9 @@ import "./assets/css/themify-icons.css"
 import "./assets/css/slick.css"
 
 import "./assets/css/nice-select.css"
+// import VeeValidate from "vee-validate";
+
+// import { ValidationProvider } from 'vee-validate';
 
 const router= new VueRouter({
  routes: Routes
@@ -28,8 +31,10 @@ const router= new VueRouter({
 // Vue.use(Embed);
 Vue.prototype.$http = http
 Vue.use(BootstrapVue)
+// Vue.use(VeeValidate);
 Vue.use(VueRouter)
 Vue.config.productionTip = false
+// Vue.component('ValidationProvider', ValidationProvider);
 
 new Vue({
 
