@@ -12,7 +12,7 @@
         <!--================Blog Area =================-->
         <section class="blog_area section-padding">
             <div class="container">
-                <div class="row">
+                <div class="row" v-for="title in filterByTerm" :key="title.id">
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
                             <article class="blog_item">
@@ -26,7 +26,7 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Apology for customer line temporary unavailability</h2>
+                                        <h2>{{ title.name }}</h2>
                                     </a>
                                     <div class="ru2n4">
                                         To all our highly esteemed customers.
@@ -101,7 +101,7 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Oasis Planet Tech Packages</h2>
+                                        <h2>{{ title.name }}</h2>
                                     </a>
                                     <div class="ru2n4">
                                      
@@ -268,7 +268,7 @@
                                 <form action="#">
                                     <div class="form-group">
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder='Search Keyword' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                                            <input    v-model="searchTerm"   type="text" class="form-control" placeholder='Search Keyword' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
                                             <div class="input-group-append">
                                                 <button class="btns" type="button"><i class="ti-search"></i></button>
                                             </div>
@@ -311,9 +311,27 @@ export default {
     name: "Blog",
     data() {
         return {
+            BlogTitle: [
+                { name: "Apology for customer line temporary unavailability" },
+                 { name: "Oasis Planet Tech brochure" },
+                   { name: "Risk management" },
+                     { name: "Explaining The OASIS APP" },
+                     { name: "Oasis Planet Tech Packages" }
+                     
+                 
+                 ],
+      searchTerm: " "
 
         }
     },
+    computed: {
+    filterByTerm() {
+      return this.BlogTitle.filter(title => {
+        return title.name.toLowerCase().includes(this.searchTerm);
+      });
+    }
+  },
+  methods: {},
     components: {
         Head,
 

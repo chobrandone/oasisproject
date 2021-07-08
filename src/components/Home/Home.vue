@@ -284,7 +284,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                    <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                         <div class="single-team mb-30 text-center">
                             <div class="team-img">
                                 <img src="../../assets/img/team/team1.png" alt="">
@@ -305,7 +305,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                    <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                         <div class="single-team mb-30 text-center">
                             <div class="team-img">
                                 <img src="../../assets/img/team/team3.png" alt="">
@@ -325,14 +325,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                    <!-- <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                         <div class="single-team mb-30 text-center">
                             <div class="team-img">
                                 <img src="../../assets/img/team/team4.png" alt="">
                                 <div class="team-caption">
                                     <h3><a href="#">Mrs Faith Babalola</a></h3>
                                     <p> MANAGING Director </p>
-                                    <!-- Blog Social -->
+                                    
                                     <div class="team-social">
                                         <ul>
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -344,8 +344,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                    </div> -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                         <div class="single-team mb-30 text-center">
                             <div class="team-img">
                                 <img src="../../assets/img/team/team2.png" alt="">
