@@ -30,6 +30,7 @@ App Usage (User Story)</p>
            <li> When the user is let into the system, instructions on usage is given.</li>
            <li>The user selects a level they want to register for.</li>
        </ol>
+       <a href=""></a>
    </div>
 
        
@@ -50,6 +51,7 @@ App Usage (User Story)</p>
 <script>
 import Header from '../Header/Header.vue'
 import Footer from '../Footer/Footer.vue'
+// var image_1 = require('../../assets/img/blog/single_blog_1.png');
 export default {
     name:"Download",
     data() {

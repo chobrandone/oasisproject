@@ -328,10 +328,10 @@
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                        <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -349,36 +349,17 @@
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                        <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="../../assets/img/team/team4.png" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mrs Faith Babalola</a></h3>
-                                <p> MANAGING Director </p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                 
                   <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
@@ -389,10 +370,10 @@
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                        <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
