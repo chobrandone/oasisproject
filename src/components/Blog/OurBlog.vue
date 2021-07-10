@@ -12,7 +12,7 @@
         <!--================Blog Area =================-->
         <section class="blog_area section-padding">
             <div class="container">
-                <div class="row">
+                <div class="row" v-for="title in filterByTerm" :key="title.id">
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
                             <article class="blog_item">
@@ -26,18 +26,30 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>{{ title.name }}</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <div class="ru2n4">
+                                        To all our highly esteemed customers.
+                                        <br>
+                                        <br>
+                                        We're deeply sorry for not been able to reach us through our customer line.
+                                        <br>
+                                        <br>
+                                        We're working hard to provide more customer line and to also ensure creditability.
+                                        <br>
+                                        <br>
+                                    </div>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">Read more</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
+                                        Thank you so much for your understanding.
+                                        <br>
+                                        <br>
+                                        <strong>Oasis planet Tech </strong>  ~ Competency and intergrity.
 
                                         </b-card>
                                     </b-collapse>
@@ -55,18 +67,23 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>Oasis Planet Tech brochure</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                     <div class="ru2n4">
+                                        Taking a look at our brochure helps you better who we are and what we have to offer.
+                                        <br>
+                                        <br>
+
+                                    </div>
+
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
+                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">Read more</b-button>
                                     <b-collapse id="collapse-1" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
+                                            <p class="card-text"><strong> THE WINNING TEAM NOW 🤗🤗 </strong></p>
 
                                         </b-card>
                                     </b-collapse>
@@ -84,19 +101,33 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>{{ title.name }}</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                    <div class="ru2n4">
+                                     
+
+                                    </div>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                    <b-collapse id="collapse-1" class="mt-2">
+                                    <b-button v-b-toggle.collapse-2 class="toggle-btn">Read more</b-button>
+                                    <b-collapse id="collapse-2" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
-
+                                              <h1> Our packages are:</h1>
+                                        <br>
+                                        <br>
+                                        <p> Gold.... #100,000 </p>
+                                        <p> Diamond...#50,000 </p>
+                                        <p> Silver.......#20,000 </p>
+                                        <p> Bronze....#5,000 </p>
+                                        The system does not allow upgrade for now. Hence, make choices that will benefit for the first 12months.
+                                        <br>
+                                        <br>
+                                            Whatever package you choose can not be upgraded until you finish the timing.
+                                            <br>
+                                            <br>
+                                            I advise to take the gold 🥇 and make it big okay... Thanks.
                                         </b-card>
                                     </b-collapse>
                                 </div>
@@ -113,19 +144,32 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="../../blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>Risk management</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                <div class="ru2n4">
+                                    The system has it's inbuilt mechanisms for risk..
+                                    <p> We work in partnership with: </p>
+                                    <p> - A Pan-african bank (UBA) and </p>
+                                    <p> - A Pan-african mobile network provider(MTN) </p>
+                                    <p> Instant transfer into subscribers account and can be cashed daily.... </p>
+                                </div>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                    <b-collapse id="collapse-1" class="mt-2">
+                                    <b-button v-b-toggle.collapse-3 class="toggle-btn">Read more</b-button>
+                                    <b-collapse id="collapse-3" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
-
+                                            No request for withdrawal that could be rejected....
+                                            <br>
+                                            <br>
+                                            Payment made daily into subscribers account..
+                                            <br>
+                                            <br>
+                                            Recoupment of reg- fee and much more in one month of subscriptions...
+                                            <br>
+                                            <br>
+                                            Hence our business is <strong> risk free. </strong>
                                         </b-card>
                                     </b-collapse>
                                 </div>
@@ -142,25 +186,60 @@
 
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2>Google inks pact for new 35-storey office</h2>
+                                        <h2>Explaining The OASIS APP</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
+                                <div class="ru2n4">
+                                    Good day friends 🌻
+                                    <br>
+                                    <br>
+                                    I welcome you all to this platform
+                                    Oasis planet tech is one unique system that gives you opportunity to *learn* and *earn*
+                                    <br>
+                                    <br>
+                                    Our world 🌍🌍 has changed and we are in a connected economy.
+                                    <br>
+                                    <br>
+                                    This economy allow you to make money through a system and just using your phone.
+                                    <br>
+                                    <br>
+                                    Our world is in dear need of men and women of skills.
+                                    <br>
+                                    <br>
+
+                                </div>
                                     <ul class="blog-info-link">
                                         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
-                                    <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                    <b-collapse id="collapse-1" class="mt-2">
+                                    <b-button v-b-toggle.collapse-4 class="toggle-btn">Read more</b-button>
+                                    <b-collapse id="collapse-4" class="mt-2">
                                         <b-card>
-                                            <p class="card-text">view full content</p>
-
+                                            Hence, oasis planet tech was born to gives skills on line by watching educating videos on line and then pay you.... wow
+                                            <br>
+                                            <br>
+                                            You can make up to #2000 to #6000 daily!😮
+                                            <br>
+                                            <br>
+                                            *Amazing opportunity 🤠*
+                                            I guess you can't miss this for any thing.
+                                            <br>
+                                            <br>
+                                            Oya! DM me to secure your slot quickly!
+                                            <br>
+                                            <br>
+                                            Congratulations 👏🥳🥳🥳🥳👏🥳👏🥳👏🥳👏 if you are here.
+                                            <br>
+                                            <br>
+                                            Connect with me and be part of the BIG DREAM!
+                                            <br>
+                                            <br>
+                                            Thanks 👍.
                                         </b-card>
                                     </b-collapse>
                                 </div>
                             </article>
 
-                            <nav class="blog-pagination justify-content-center d-flex">
+                            <!-- <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
                                     <li class="page-item">
                                         <a href="#" class="page-link" aria-label="Previous">
@@ -179,8 +258,8 @@
                                         </a>
                                     </li>
                                 </ul>
-                            
-                            </nav>
+
+                            </nav> -->
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -189,7 +268,7 @@
                                 <form action="#">
                                     <div class="form-group">
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder='Search Keyword' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                                            <input    v-model="searchTerm"   type="text" class="form-control" placeholder='Search Keyword' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
                                             <div class="input-group-append">
                                                 <button class="btns" type="button"><i class="ti-search"></i></button>
                                             </div>
@@ -197,153 +276,6 @@
                                     </div>
                                     <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">Search</button>
                                 </form>
-                            </aside>
-
-                            <aside class="single_sidebar_widget post_category_widget">
-                                <h4 class="widget_title">Category</h4>
-                                <ul class="list cat-list">
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Resaurant food</p>
-                                            <p>(37)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Travel news</p>
-                                            <p>(10)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Modern technology</p>
-                                            <p>(03)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Product</p>
-                                            <p>(11)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Inspiration</p>
-                                            <p>21</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Health Care (21)</p>
-                                            <p>09</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </aside>
-
-                            <aside class="single_sidebar_widget popular_post_widget">
-                                <h3 class="widget_title">Recent Post</h3>
-                                <div class="media post_item">
-                                    <img src="../../assets/img/post/post_1.png" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3>From life was you fish...</h3>
-                                        </a>
-                                        <p>January 12, 2019</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../../assets/img/post/post_2.png" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3>The Amazing Hubble</h3>
-                                        </a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../../assets/img/post/post_3.png" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3>Astronomy Or Astrology</h3>
-                                        </a>
-                                        <p>03 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../../assets/img/post/post_4.png" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3>Asteroids telescope</h3>
-                                        </a>
-                                        <p>01 Hours ago</p>
-                                    </div>
-                                </div>
-                            </aside>
-                            <aside class="single_sidebar_widget tag_cloud_widget">
-                                <h4 class="widget_title">Tag Clouds</h4>
-                                <ul class="list">
-                                    <li>
-                                        <a href="#">project</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">love</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">technology</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">restaurant</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">life style</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">design</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">illustration</a>
-                                    </li>
-                                </ul>
-                            </aside>
-
-                            <aside class="single_sidebar_widget instagram_feeds">
-                                <h4 class="widget_title">Instagram Feeds</h4>
-                                <ul class="instagram_row flex-wrap">
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_5.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_6.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_7.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_8.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_9.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="img-fluid" src="../../assets/img/post/post_10.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
                             </aside>
 
                             <aside class="single_sidebar_widget newsletter_widget">
@@ -379,9 +311,27 @@ export default {
     name: "Blog",
     data() {
         return {
+            BlogTitle: [
+                { name: "Apology for customer line temporary unavailability" },
+                 { name: "Oasis Planet Tech brochure" },
+                   { name: "Risk management" },
+                     { name: "Explaining The OASIS APP" },
+                     { name: "Oasis Planet Tech Packages" }
+                     
+                 
+                 ],
+      searchTerm: " "
 
         }
     },
+    computed: {
+    filterByTerm() {
+      return this.BlogTitle.filter(title => {
+        return title.name.toLowerCase().includes(this.searchTerm);
+      });
+    }
+  },
+  methods: {},
     components: {
         Head,
 
@@ -392,13 +342,15 @@ export default {
 </script>
 
 <style scoped>
-.toggle-btn{
-    background:#f15f22 ;
+.toggle-btn {
+    background: #f15f22;
     border: 0px;
 }
-.toggle-btn:hover{
-    background:#EDC750 ;
+
+.toggle-btn:hover {
+    background: #EDC750;
 }
+
 .boxed-btn {
     background: #fff;
     color: #f15f22 !important;
@@ -510,9 +462,11 @@ export default {
 .latest-blog-area .area-heading {
     margin-bottom: 70px
 }
-.blog_area{
-    margin-top: 200px !important;
+
+.blog_area {
+    /* margin-top: 200px !important; */
 }
+
 .blog_area a {
     color: "Josefin Sans", sans-serif !important;
     text-decoration: none;

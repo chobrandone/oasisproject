@@ -3,75 +3,63 @@
 <div> 
     <Header/>
     <Servicehero/>
-    <div class="categories-area section-padding30">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle text-center mb-80">
-                        <span>Our Services</span>
-                        <h2>What We Can Do For You</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6 service">
-                    <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-shipped"></span>
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Land Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
-                            <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
-
-                                    </b-card>
-                                </b-collapse>
+    <section id="service">
+        <!-- services start here-->
+        <div class="categories-area section-padding30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-80">
+                            <span>Our Services</span>
+                            <h2>What We Can Do For You</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 service">
-                    <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-ship"></span>
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Ship Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
-                            <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
-
-                                    </b-card>
-                                </b-collapse>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 service">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-shipped"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a>Digital Marketing</a></h5>
+                                <p>Oasis Planet Tech is a Digital Marketing platform with vision in revolutionizing and digitalizing the marketing world with new and advanced features.</p>
+                               
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 service">
-                    <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-plane"></span>
+                    <div class="col-lg-4 col-md-6 col-sm-6 service">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-ship"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a>Network Marketing</a></h5>
+                                <p>Through the oasis planet tech has a mobile app where person accross the globe can earn money independently by doing various tasks on the app.</p>
+                               
+                            </div>
                         </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Air Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
-                            <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 service">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-plane"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Trade And Earn</a></h5>
+                                <p>the era of 'bring 2" before you earn is over, With Oasis Planet Tech you can Earn money by simply watching videos and get paid directly with UBA.</p>
 
-                                    </b-card>
-                                </b-collapse>
+                               
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+          
         </div>
-    </div>
+        <!-- services end here-->
+    </section>
     <Footer/>
     </div>
     

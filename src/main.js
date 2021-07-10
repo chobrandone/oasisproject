@@ -10,6 +10,10 @@ import 'bootstrap';
 import "./assets/css/bootstrap.min.css"
 // import "./assets/css/owl.carousel.min.css"
 
+import Toasted from 'vue-toasted';
+
+Vue.use(Toasted,{duration:2000,theme:'toasted-primary',position:'top-center'})
+
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue'
 import "./assets/css/bootstrap.min.css"
 import "./assets/css/flaticon.css"
@@ -20,6 +24,9 @@ import "./assets/css/themify-icons.css"
 import "./assets/css/slick.css"
 
 import "./assets/css/nice-select.css"
+// import VeeValidate from "vee-validate";
+
+// import { ValidationProvider } from 'vee-validate';
 
 const router= new VueRouter({
  routes: Routes
@@ -28,8 +35,10 @@ const router= new VueRouter({
 // Vue.use(Embed);
 Vue.prototype.$http = http
 Vue.use(BootstrapVue)
+// Vue.use(VeeValidate);
 Vue.use(VueRouter)
 Vue.config.productionTip = false
+// Vue.component('ValidationProvider', ValidationProvider);
 
 new Vue({
 

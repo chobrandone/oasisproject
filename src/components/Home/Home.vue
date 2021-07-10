@@ -8,11 +8,11 @@
                 <div class="header-top d-none d-lg-block">
                     <div class="container">
                         <div class="col-xl-12">
-                            <div class="row d-flex justify-content-between align-items-center">
+                            <div class="row d-flex justify-content-between align-items-center row-head">
                                 <div class="header-info-left">
                                     <ul>
                                         <li>Phone: +234 813 597 9932</li>
-                                        <li>Email: oasisplanettech21@gmail.com</li>
+                                        <li>Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">oasisplanettech21@gmail.com</a> </li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
@@ -48,9 +48,10 @@
                                         <b-nav-item href="#about" class="link">About</b-nav-item>
                                         <b-nav-item href="#service" class="link">Services</b-nav-item>
                                         <b-nav-item href="#blog" class="link">Blog</b-nav-item>
-                                        <b-nav-item href="#contact" class="link">Contact</b-nav-item>
+                                        <b-nav-item  @click="contact" class="link">Contact</b-nav-item>
+                                        <b-nav-item  @click="gallery" class="link">Gallery</b-nav-item>
                                         <!-- Header-btn -->
-                                        <div class="header-right-btn d-none d-lg-block ml-20 text-left ">
+                                        <div class="header-right-btn d-lg-block ml-20 ">
                                             <a @click="download" class="btn header-btn">Get Oasis App</a>
                                         </div>
                                     </b-navbar-nav>
@@ -80,12 +81,20 @@
                                     <!-- <h2>Feel free to watch videos and gain Knowledge</h2> -->
                                 </div>
                                 <!--Hero form -->
-                                <form action="#" class="search-box text-center d-flex justify-content-center">
+                                <form class="search-box text-center d-flex justify-content-center">
                                     <div class="input-form">
-                                        <input type="text" placeholder="Enter your email">
+                                        <input v-model="subscribers.email"
+                                         type="email" 
+                                         id="email"
+                                         name="email"
+                                         placeholder="Enter your email"
+                                         required />
                                     </div>
                                     <div class="search-form">
-                                        <a href="#">Subscribe</a>
+                                        <a 
+                                        type="submit" 
+                                        @click="saveSubscriber" 
+                                       >Subscribe</a>
                                     </div>
                                 </form>
                                 <!-- Hero Pera -->
@@ -162,13 +171,7 @@
                             <div class="cat-cap">
                                 <h5><a>Digital Marketing</a></h5>
                                 <p>Oasis Planet Tech is a Digital Marketing platform with vision in revolutionizing and digitalizing the marketing world with new and advanced features.</p>
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
-
-                                    </b-card>
-                                </b-collapse>
+                               
                             </div>
                         </div>
                     </div>
@@ -180,13 +183,7 @@
                             <div class="cat-cap">
                                 <h5><a>Network Marketing</a></h5>
                                 <p>Through the oasis planet tech has a mobile app where person accross the globe can earn money independently by doing various tasks on the app.</p>
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
-
-                                    </b-card>
-                                </b-collapse>
+                               
                             </div>
                         </div>
                     </div>
@@ -199,13 +196,7 @@
                                 <h5><a href="services.html">Trade And Earn</a></h5>
                                 <p>the era of 'bring 2" before you earn is over, With Oasis Planet Tech you can Earn money by simply watching videos and get paid directly with UBA.</p>
 
-                                <b-button v-b-toggle.collapse-1 class="toggle-btn">view full content</b-button>
-                                <b-collapse id="collapse-1" class="mt-2">
-                                    <b-card>
-                                        <p class="card-text">view full content</p>
-
-                                    </b-card>
-                                </b-collapse>
+                               
                             </div>
                         </div>
                     </div>
@@ -255,38 +246,43 @@
         <div class="contact-form">
             <div class="container">
                 <form class="contactbg">
+                    <div v-if="!submitted">
                     <h3>Drop Us a Message</h3>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input 
                                 type="text" 
-                                name="name" 
-                                id="name"
-                                v-model="name"
+                                name="contactName" 
+                                id="contactName"
+                                v-model="sendMessage.contactName"
                                 class="form-control inputs" 
                                 placeholder="Your Name *" 
-                                value="" />
+                                value=""
+                                required  />
                             </div>
                             <div class="form-group">
                                 <input 
-                                type="text" 
-                                name="emailId" 
-                                id="emailId"
-                                v-model="email"
+                                type="email" 
+                                name="contactEmail" 
+                                id="contactEmail"
+                                v-model="sendMessage.contactEmail"
                                 class="form-control inputs" 
                                 placeholder="Your Email *" 
-                                value="" />
+                                value=""
+                                required  />
                             </div>
                             <div class="form-group">
                                 <input 
                                 type="number" 
-                                name="phone"
-                                id="phone"
-                                v-model="phone" 
+                                name="contactPhone"
+                                id="contactPhone"
+                                v-model="sendMessage.contactPhone" 
                                 class="form-control inputs" 
                                 placeholder="Your Phone Number *" 
-                                value="" />
+                                value=""
+                                required  />
+                                
                             </div>
 
                         </div>
@@ -295,7 +291,7 @@
                                 <textarea 
                                 name="message"
                                 id="message"
-                                v-model="message"
+                                v-model="sendMessage.message"
                                 class="form-control" 
                                 placeholder="Your Message *" 
                                 style="width: 100%; height: 150px;"
@@ -310,10 +306,16 @@
                         <button 
                         type="submit" 
                         name="btnSubmit" 
-                        @click.prevent="contactForm()"
+                        @click="saveContact"
                         class="btnContact"> 
                        Send Message 
                        </button>
+                    </div>
+                    </div>
+                    <div v-else>
+                    <h4>You submitted successfully!</h4>
+                    <button class="btn btn-success" @click="newTutorial">Add</button>
+                    
                     </div>
                 </form>
             </div>
@@ -322,8 +324,8 @@
         </div>
         <!-- contact-form end -->
     </section>
-    <section id="team">
-      <div class="team-area section-padding30">
+    <section id="team" class="team-margin" >
+      <div class="team-area section-padding30 ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="cl-xl-7 col-lg-8 col-md-10">
@@ -335,7 +337,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
                             <img src="../../assets/img/team/team1.png" alt="">
@@ -345,50 +347,52 @@
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                        <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
-                    <div class="single-team mb-30 text-center">
-                        <div class="team-img">
-                            <img src="../../assets/img/team/team2.png" alt="">
-                            <div class="team-caption">
-                                <h3><a href="#">Mr. IMO JOSEPH</a></h3>
-                                <p>Dirctor Of Operations</p>
-                                <!-- Blog Social -->
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
+               
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
                             <img src="../../assets/img/team/team3.png" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mrs. JOY OBOT</a></h3>
-                                <p>Sectary General</p>
+                                <h3><a href="#">Mrs. Joy Obot</a></h3>
+                                <p>Secretary General</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-globe"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                        <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                  <div class="col-lg-3 col-md-3 col-sm-6 mb-5">
+                    <div class="single-team mb-30 text-center">
+                        <div class="team-img">
+                            <img src="../../assets/img/team/team2.png" alt="">
+                            <div class="team-caption">
+                                <h3><a href="#">Mr. Imo Joseph</a></h3>
+                                <p> Director Of Operation </p>
+                                <!-- Blog Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/Oasisplanettech"><i class="fab fa-facebook-f"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                                        <li><a href="https://linkedin.com/in/oasis-planet-tech-6565b0214"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.instagram.com/oasisplanettech/"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -476,7 +480,7 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="../../assets/img/gallery/blog01.png" alt="">
+                                    <img src="../../assets/img/blog/blog1.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="blog-caption">
@@ -486,10 +490,10 @@
                                 </div>
                                 <div class="blog-cap text-left">
                                     <ul>
-                                        <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
+                                        <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
                                         <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                     </ul>
-                                    <h3 class="text-left"><a href="../../blog_details.html">Here’s what you should know before.</a></h3>
+                                    <h3 class="text-left"><a @click="blog"> Adressing People in Conference</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -499,20 +503,20 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="../../assets/img/gallery/blog1.png" alt="">
+                                    <img src="../../assets/img/blog/blog2.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="blog-caption">
                                 <div class="blog-date text-center">
-                                    <span>27</span>
-                                    <p>SEP</p>
+                                    <span>06</span>
+                                    <p>JUNE</p>
                                 </div>
                                 <div class="blog-cap text-left">
                                     <ul>
-                                        <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
+                                        <li><a href="#"><i class="ti-user"></i> C.E.O David</a></li>
                                         <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
                                     </ul>
-                                    <h3 class="text-left"><a href="../../blog_details.html">Here’s what you should know before.</a></h3>
+                                    <h3 class="text-left"><a @click="blog"> Explaining The OASIS APP</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -521,20 +525,20 @@
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="../../assets/img/gallery/blog02.png" alt="">
+                                    <img src="../../assets/img/blog/blog6.jpeg" alt="">
                                 </div>
                             </div>
                             <div class="blog-caption">
                                 <div class="blog-date text-center">
-                                    <span>27</span>
-                                    <p>SEP</p>
+                                    <span>25</span>
+                                    <p>AUG</p>
                                 </div>
                                 <div class="blog-cap text-left">
                                     <ul>
-                                        <li><a href="#"><i class="ti-user"></i> Jessica Temphers</a></li>
-                                        <li><a href="#"><i class="ti-comment-alt"></i> 12</a></li>
+                                        <li><a href="#"><i class="ti-user"></i> Secretary General</a></li>
+                                        <li><a href="#"><i class="ti-comment-alt"> </i> 12</a></li>
                                     </ul>
-                                    <h3 class="text-left"><a href="blog_details.html">Here’s what you should know before.</a></h3>
+                                    <h3 class="text-left"><a @click="blog">Managing the App Demand</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -598,7 +602,7 @@
                                 <div class="footer-tittle">
                                     <h4 class="text-center">RESOURCES</h4>
                                     <ul class="text-center footer-list">
-                                        <li><a href="#">Home Insurance</a></li>
+                                        <li><a href="#">Entreprenuer Knowledge</a></li>
                                         <li><a href="#"> Registration</a></li>
                                         <li><a href="#"> Get Mobile App</a></li>
                                         <li><a href="#"> Trade and Earn</a></li>
@@ -679,6 +683,8 @@
 import axios from "axios";
 import BlogDataService from "../../services/blog.service";
 import ContactDataService from "../../services/contact.service";
+import SubscriberDataService from "../../services/subscribers.service";
+
 export default {
      /*** Blog integration */
     /*** Contact us integration */
@@ -692,9 +698,9 @@ export default {
             emailTo: process.env.smtpTo,
             dataAvailable: false,
                 sendMessage: {
-                   name: '',
-                   email: '',
-                   phone: '',
+                   contactName: '',
+                   contactEmail: '',
+                   contactPhone: '',
                    message:'',
                 },
                 submitted: false,
@@ -706,18 +712,41 @@ export default {
                 postAuthor: '',
                 postDesc: "",
                 postContent: "",
-                postImgUrl: ""
+                postImgUrl: "",
+
+                subscribers:{
+                email:''
+                }
                 
             };
         },
         
     methods: {
-
             retrievePost() {
                 BlogDataService.getAll()
                     .then(response => {
                     this.blogPost = response.data;
                     console.log(response.data);
+                    })
+                    .catch(e => {
+                    console.log(e);
+                    });
+                },
+                 retrieveSubscribers() {
+                SubscriberDataService.getAll()
+                    .then(response => {
+                    let sub = this.subscribers = response.data;
+                    console.log(sub);
+                    })
+                    .catch(e => {
+                    console.log(e);
+                    });
+                },
+                retrieveContact() {
+                ContactDataService.getAll()
+                    .then(response => {
+                    let sub = this.sendMessage = response.data;
+                    console.log(sub);
                     })
                     .catch(e => {
                     console.log(e);
@@ -743,27 +772,28 @@ export default {
                 /**contact method start */
             saveContact() {
                 var data = {
-                    name: this.sendMessage.name,
-                    phone: this.sendMessage.phone,
-                    email: this.sendMessage.email,
+                    contactName: this.sendMessage.name,
+                    contactPhone: this.sendMessage.phone,
+                    contactEmail: this.sendMessage.email,
                     message: this.sendMessage.message
                 }
             
                ContactDataService.create(data)
                 .then(response => {
-                this.sendMessage.id = response.data.id;
+                let sendId = this.sendMessage.id = response.data._id;
                 console.log(response.data);
+                console.log(sendId, "Contact save successfully");
                 this.submitted = true;
+                this.$toasted.show("Meassage sent. Contact save successfully");
                 })
                 .catch(e => {
                 console.log(e);
                 });
                 },
-            newTutorial() {
+            newContact() {
                 this.submitted = false;
                 this.tutorial = {};
             },
-             
              send() {
             let msg = `<strong>From:</strong> ${this.name} - ${this.email}<br/>`;
             msg += `<strong>Phone number:</strong> ${this.phone} <br/>`;
@@ -790,9 +820,27 @@ export default {
         .catch(err => {
           console.log(err);
         });
+            },
+            /**contact method start */
+            /**subscriber method start */
+        saveSubscriber() {
+                var subData = {
+                    email: this.subscribers.email
+                }
+                 SubscriberDataService.create(subData)
+                .then(response => {
+                this.sendMessage.id = response.data.id;
+                console.log(response.data);
+                this.submitted = true;
+                this.$toasted.show("Meassage sent. Thanks for Subscribing to our newsLetter");
+                })
+                .catch(e => {
+                console.log(e);
+                });
+                },
+        /**subscriber method start */
+   
     },
-
-    /**contact method start */
 
         home: function () {
             this.$router.push({
@@ -834,9 +882,16 @@ export default {
                 path: "/team",
             });
         },
-    },
+           gallery: function () {
+            this.$router.push({
+                path: "/gallery",
+            });
+        },
+    
     mounted() {
     this.retrievePost();
+    this.retrieveSubscribers();
+    this.retrieveContact();
   }
 }
 </script>

@@ -24,7 +24,7 @@
                         </div>
                         <p class="text-left">OASIS PLANET TECH is a digital marketing platform with vision to revolutionize the digital marketing world founded in 2019 by David Brian, CEO OASIS PLANET TECH LIMITED was duly registered under company and Allied Matters Act 2020. Oasis planet Tech aim at creating an independent money making networking platform (Oasis mobile App) where persons from all works of life can benefit from at a very low cost through its strategic partnership. OASIS PLANET TECH through its partnership with both the banking and telecommunication institutions will be working hand in hand to ensure its smooth running of its planet.</p>
                         <p class="text-left"> OASIS PLANET TECH is a cooperate organization that exist to equip, empower, train and develop young entrepreneurs with technological skills, positive thinking and innovative mindsets to provide solutions to Africa and the world’s economy through technology.</p>
-                        <a href="about.html" class="btn">More About Us</a>
+                     
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -71,8 +71,8 @@ export default {
     margin-top: 100px;
 }
 
-.main-abouts {
-    margin-top: 10px;
+.main-about {
+    margin-top: 30px;
 }
 
 .latest_blog_area {
