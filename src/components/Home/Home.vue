@@ -246,6 +246,7 @@
         <div class="contact-form">
             <div class="container">
                 <form class="contactbg">
+                    <div v-if="!submitted">
                     <h3>Drop Us a Message</h3>
                     <div class="row">
                         <div class="col-md-6">
@@ -309,6 +310,12 @@
                         class="btnContact"> 
                        Send Message 
                        </button>
+                    </div>
+                    </div>
+                    <div v-else>
+                    <h4>You submitted successfully!</h4>
+                    <button class="btn btn-success" @click="newTutorial">Add</button>
+                    
                     </div>
                 </form>
             </div>
