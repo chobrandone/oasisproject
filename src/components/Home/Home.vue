@@ -84,11 +84,17 @@
                                 <form class="search-box text-center d-flex justify-content-center">
                                     <div class="input-form">
                                         <input v-model="subscribers.email"
-                                         type="text" 
-                                         placeholder="Enter your email">
+                                         type="email" 
+                                         id="email"
+                                         name="email"
+                                         placeholder="Enter your email"
+                                         required />
                                     </div>
                                     <div class="search-form">
-                                        <a @click="saveSubscriber" href="#">Subscribe</a>
+                                        <a 
+                                        type="submit" 
+                                        @click="saveSubscriber" 
+                                       >Subscribe</a>
                                     </div>
                                 </form>
                                 <!-- Hero Pera -->
@@ -251,17 +257,19 @@
                                 v-model="sendMessage.contactName"
                                 class="form-control inputs" 
                                 placeholder="Your Name *" 
-                                value="" />
+                                value=""
+                                required  />
                             </div>
                             <div class="form-group">
                                 <input 
-                                type="text" 
+                                type="email" 
                                 name="contactEmail" 
                                 id="contactEmail"
                                 v-model="sendMessage.contactEmail"
                                 class="form-control inputs" 
                                 placeholder="Your Email *" 
-                                value="" />
+                                value=""
+                                required  />
                             </div>
                             <div class="form-group">
                                 <input 
@@ -271,7 +279,9 @@
                                 v-model="sendMessage.contactPhone" 
                                 class="form-control inputs" 
                                 placeholder="Your Phone Number *" 
-                                value="" />
+                                value=""
+                                required  />
+                                
                             </div>
 
                         </div>
@@ -725,6 +735,16 @@ export default {
                     console.log(e);
                     });
                 },
+                retrieveContact() {
+                ContactDataService.getAll()
+                    .then(response => {
+                    let sub = this.sendMessage = response.data;
+                    console.log(sub);
+                    })
+                    .catch(e => {
+                    console.log(e);
+                    });
+                },
             refreshList() {
                     this.retrievePost();
                     this.currentPost = null;
@@ -753,8 +773,9 @@ export default {
             
                ContactDataService.create(data)
                 .then(response => {
-                this.sendMessage.id = response.data.id;
+                let sendId = this.sendMessage.id = response.data._id;
                 console.log(response.data);
+                console.log(sendId, "Contact save successfully");
                 this.submitted = true;
                 this.$toasted.show("Meassage sent. Contact save successfully");
                 })
@@ -762,11 +783,10 @@ export default {
                 console.log(e);
                 });
                 },
-            newTutorial() {
+            newContact() {
                 this.submitted = false;
                 this.tutorial = {};
             },
-             
              send() {
             let msg = `<strong>From:</strong> ${this.name} - ${this.email}<br/>`;
             msg += `<strong>Phone number:</strong> ${this.phone} <br/>`;
@@ -793,10 +813,9 @@ export default {
         .catch(err => {
           console.log(err);
         });
-    },
-
-    /**contact method start */
-    /**subscriber method start */
+            },
+            /**contact method start */
+            /**subscriber method start */
         saveSubscriber() {
                 var subData = {
                     email: this.subscribers.email
@@ -865,6 +884,7 @@ export default {
     mounted() {
     this.retrievePost();
     this.retrieveSubscribers();
+    this.retrieveContact();
   }
 }
 </script>
