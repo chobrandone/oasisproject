@@ -309,7 +309,7 @@
 </template>
 
 <script>
-import Bloghero from "./BlogHero.vue"
+import Bloghero from "./bloghero.vue"
 import Head from "../Header/Header.vue";
 import Footer from "../Footer/Footer.vue"
 // import image from "../../assets/img/post/"
