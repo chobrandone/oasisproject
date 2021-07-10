@@ -81,12 +81,14 @@
                                     <!-- <h2>Feel free to watch videos and gain Knowledge</h2> -->
                                 </div>
                                 <!--Hero form -->
-                                <form action="#" class="search-box text-center d-flex justify-content-center">
+                                <form class="search-box text-center d-flex justify-content-center">
                                     <div class="input-form">
-                                        <input type="text" placeholder="Enter your email">
+                                        <input v-model="subscribers.email"
+                                         type="text" 
+                                         placeholder="Enter your email">
                                     </div>
                                     <div class="search-form">
-                                        <a href="#">Subscribe</a>
+                                        <a @click="saveSubscriber" href="#">Subscribe</a>
                                     </div>
                                 </form>
                                 <!-- Hero Pera -->
@@ -244,9 +246,9 @@
                             <div class="form-group">
                                 <input 
                                 type="text" 
-                                name="name" 
-                                id="name"
-                                v-model="name"
+                                name="contactName" 
+                                id="contactName"
+                                v-model="sendMessage.contactName"
                                 class="form-control inputs" 
                                 placeholder="Your Name *" 
                                 value="" />
@@ -254,9 +256,9 @@
                             <div class="form-group">
                                 <input 
                                 type="text" 
-                                name="emailId" 
-                                id="emailId"
-                                v-model="email"
+                                name="contactEmail" 
+                                id="contactEmail"
+                                v-model="sendMessage.contactEmail"
                                 class="form-control inputs" 
                                 placeholder="Your Email *" 
                                 value="" />
@@ -264,9 +266,9 @@
                             <div class="form-group">
                                 <input 
                                 type="number" 
-                                name="phone"
-                                id="phone"
-                                v-model="phone" 
+                                name="contactPhone"
+                                id="contactPhone"
+                                v-model="sendMessage.contactPhone" 
                                 class="form-control inputs" 
                                 placeholder="Your Phone Number *" 
                                 value="" />
@@ -278,7 +280,7 @@
                                 <textarea 
                                 name="message"
                                 id="message"
-                                v-model="message"
+                                v-model="sendMessage.message"
                                 class="form-control" 
                                 placeholder="Your Message *" 
                                 style="width: 100%; height: 150px;"
@@ -293,7 +295,7 @@
                         <button 
                         type="submit" 
                         name="btnSubmit" 
-                        @click.prevent="contactForm()"
+                        @click="saveContact"
                         class="btnContact"> 
                        Send Message 
                        </button>
@@ -683,6 +685,8 @@
 import axios from "axios";
 import BlogDataService from "../../services/blog.service";
 import ContactDataService from "../../services/contact.service";
+import SubscriberDataService from "../../services/subscribers.service";
+
 export default {
      /*** Blog integration */
     /*** Contact us integration */
@@ -696,9 +700,9 @@ export default {
             emailTo: process.env.smtpTo,
             dataAvailable: false,
                 sendMessage: {
-                   name: '',
-                   email: '',
-                   phone: '',
+                   contactName: '',
+                   contactEmail: '',
+                   contactPhone: '',
                    message:'',
                 },
                 submitted: false,
@@ -710,18 +714,31 @@ export default {
                 postAuthor: '',
                 postDesc: "",
                 postContent: "",
-                postImgUrl: ""
+                postImgUrl: "",
+
+                subscribers:{
+                email:''
+                }
                 
             };
         },
         
     methods: {
-
             retrievePost() {
                 BlogDataService.getAll()
                     .then(response => {
                     this.blogPost = response.data;
                     console.log(response.data);
+                    })
+                    .catch(e => {
+                    console.log(e);
+                    });
+                },
+                 retrieveSubscribers() {
+                SubscriberDataService.getAll()
+                    .then(response => {
+                    let sub = this.subscribers = response.data;
+                    console.log(sub);
                     })
                     .catch(e => {
                     console.log(e);
@@ -747,9 +764,9 @@ export default {
                 /**contact method start */
             saveContact() {
                 var data = {
-                    name: this.sendMessage.name,
-                    phone: this.sendMessage.phone,
-                    email: this.sendMessage.email,
+                    contactName: this.sendMessage.name,
+                    contactPhone: this.sendMessage.phone,
+                    contactEmail: this.sendMessage.email,
                     message: this.sendMessage.message
                 }
             
@@ -758,6 +775,7 @@ export default {
                 this.sendMessage.id = response.data.id;
                 console.log(response.data);
                 this.submitted = true;
+                this.$toasted.show("Meassage sent. Contact save successfully");
                 })
                 .catch(e => {
                 console.log(e);
@@ -797,6 +815,25 @@ export default {
     },
 
     /**contact method start */
+    /**subscriber method start */
+        saveSubscriber() {
+                var subData = {
+                    email: this.subscribers.email
+                }
+                 SubscriberDataService.create(subData)
+                .then(response => {
+                this.sendMessage.id = response.data.id;
+                console.log(response.data);
+                this.submitted = true;
+                this.$toasted.show("Meassage sent. Thanks for Subscribing to our newsLetter");
+                })
+                .catch(e => {
+                console.log(e);
+                });
+                },
+        /**subscriber method start */
+   
+    },
 
         home: function () {
             this.$router.push({
@@ -843,9 +880,10 @@ export default {
                 path: "/gallery",
             });
         },
-    },
+    
     mounted() {
     this.retrievePost();
+    this.retrieveSubscribers();
   }
 }
 </script>

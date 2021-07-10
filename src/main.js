@@ -10,6 +10,10 @@ import 'bootstrap';
 import "./assets/css/bootstrap.min.css"
 // import "./assets/css/owl.carousel.min.css"
 
+import Toasted from 'vue-toasted';
+
+Vue.use(Toasted,{duration:2000,theme:'toasted-primary',position:'top-center'})
+
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue'
 import "./assets/css/bootstrap.min.css"
 import "./assets/css/flaticon.css"

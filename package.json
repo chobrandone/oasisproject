@@ -23,6 +23,7 @@
     "vue": "^2.6.11",
     "vue-gallery-slideshow": "^1.5.2",
     "vue-router": "^3.5.1",
+    "vue-toasted": "^1.1.28",
     "yup": "^0.32.9"
   },
   "devDependencies": {
