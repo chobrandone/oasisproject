@@ -314,7 +314,7 @@
                     </div>
                     <div v-else>
                     <h4>You submitted successfully!</h4>
-                    <button class="btn btn-success" @click="newTutorial">Add</button>
+                    <button class="btn btn-success" @click="newContact">Add</button>
                     
                     </div>
                 </form>
@@ -448,11 +448,16 @@
                         <div class="testimonial-form text-center">
                             <h3>Subscribe To App.</h3>
                             <input 
-                             type="text"
-                             required
-                             placeholder="Email"
+                            type="email"
+                            v-model="subscribers.email"
+                            required
+                            placeholder="Email"
                               >
-                            <button name="submit" class="submit-btn">Request App</button>
+                            <button 
+                            type="submit" 
+                            class="submit-btn"
+                            @click="saveSubscriber"
+                            >Request App</button>
                         </div>
                     </div>
                     <!-- Form End -->
@@ -736,7 +741,7 @@ export default {
                 SubscriberDataService.getAll()
                     .then(response => {
                     let sub = this.subscribers = response.data;
-                    console.log(sub);
+                    console.log(sub, "all subscribers");
                     })
                     .catch(e => {
                     console.log(e);
@@ -745,8 +750,8 @@ export default {
                 retrieveContact() {
                 ContactDataService.getAll()
                     .then(response => {
-                    let sub = this.sendMessage = response.data;
-                    console.log(sub);
+                    let contacts = this.sendMessage = response.data;
+                    console.log(contacts, "This is all contact save to database");
                     })
                     .catch(e => {
                     console.log(e);
@@ -772,9 +777,9 @@ export default {
                 /**contact method start */
             saveContact() {
                 var data = {
-                    contactName: this.sendMessage.name,
-                    contactPhone: this.sendMessage.phone,
-                    contactEmail: this.sendMessage.email,
+                    name: this.sendMessage.contactName,
+                    phone: this.sendMessage.contactPhone,
+                    email: this.sendMessage.contactEmail,
                     message: this.sendMessage.message
                 }
             

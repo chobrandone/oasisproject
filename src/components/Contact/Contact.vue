@@ -18,31 +18,67 @@
                         <h2 class="contact-title">Get in Touch</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="form-contact contact_form" id="contactForm" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                                        <textarea 
+                                        class="form-control w-100" 
+                                        name="message" 
+                                        id="message" cols="30" rows="9" 
+                                        onfocus="this.placeholder = ''" 
+                                        v-model="sendMessage.message"
+                                        onblur="this.placeholder = 'Enter Message'" 
+                                        placeholder=" Enter Message" required>
+                                        </textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                        <input class="form-control valid" 
+                                        type="text"
+                                        name="contactName" 
+                                        id="contactName"
+                                        v-model="sendMessage.contactName"
+                                        onfocus="this.placeholder = ''" 
+                                        onblur="this.placeholder = 'Enter your name'" 
+                                        placeholder="Enter your name" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                        <input 
+                                        class="form-control valid" 
+                                        type="email"
+                                        name="contactEmail" 
+                                        id="contactEmail"
+                                        v-model="sendMessage.contactEmail" 
+                                        onfocus="this.placeholder = ''" 
+                                        onblur="this.placeholder = 'Enter email address'" 
+                                        placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                        <input 
+                                        type="number"
+                                        class="form-control" 
+                                        name="contactPhone"
+                                        id="contactPhone"
+                                        v-model="sendMessage.contactPhone" 
+                                        onfocus="this.placeholder = ''" 
+                                        onblur="this.placeholder = 'Enter phone'" 
+                                        placeholder="Enter phone">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                                <button 
+                                type="submit" 
+                                name="btnSubmit" 
+                                @click="saveContact"
+                                class="button button-contactForm boxed-btn"
+                                >Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -80,21 +116,69 @@
         
 </template>
 <script>
+//import axios from "axios";
 import Head from "../../components/Header/Header.vue"
 import Footer from "../Footer/Footer.vue"
 import Contacthero from "./Contacthero.vue"
+import ContactDataService from "../../services/contact.service";
+
 export default {
     name:"Contact",
     data() {
         return {
-            
+             sendMessage: {
+                   contactName: '',
+                   contactEmail: '',
+                   contactPhone: '',
+                   message:''
+                },
+                submitted: false
         }
+    },
+    methods: {
+        retrieveContact() {
+                ContactDataService.getAll()
+                    .then(response => {
+                    let contacts = this.sendMessage = response.data;
+                    console.log(contacts, "This is all contact save to database");
+                    })
+                    .catch(e => {
+                    console.log(e);
+                    });
+                },
+                saveContact() {
+                var data = {
+                    name: this.sendMessage.contactName,
+                    phone: this.sendMessage.contactPhone,
+                    email: this.sendMessage.contactEmail,
+                    message: this.sendMessage.message
+                }
+            
+               ContactDataService.create(data)
+                .then(response => {
+                let sendId = this.sendMessage.id = response.data._id;
+                console.log(response.data);
+                console.log(sendId, "Contact save successfully");
+                this.submitted = true;
+                this.$toasted.show("Meassage sent. Contact save successfully");
+                })
+                .catch(e => {
+                console.log(e);
+                });
+                },
+            newContact() {
+                this.submitted = false;
+                this.tutorial = {};
+            }
     },
     components:{
         Head,
         Footer,
         Contacthero
-    }
+    },
+     mounted() {
+    this.retrieveContact();
+  }
 }
 </script>
 <style scoped>
